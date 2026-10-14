@@ -1,0 +1,186 @@
+{
+  "categories": [
+    {
+      "id": "hamburgueres",
+      "name": "Hambúrgueres",
+      "icon": "🍔",
+      "items": [
+        {
+          "id": "smash-simples",
+          "name": "Smash Simples",
+          "description": "Pão, carne smash 90g, queijo, alface, tomate, cebola e molho especial da casa.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        },
+        {
+          "id": "smash-duplo",
+          "name": "Smash Duplo",
+          "description": "Pão, 2x carne smash 90g, queijo, alface, tomate, cebola e molho especial da casa.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        },
+        {
+          "id": "smash-bacon",
+          "name": "Smash Bacon",
+          "description": "Pão, carne smash 90g, queijo, bacon crocante, alface, tomate, cebola e molho especial.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        },
+        {
+          "id": "smash-duplo-bacon",
+          "name": "Smash Duplo Bacon",
+          "description": "Pão, 2x carne smash 90g, queijo, bacon crocante, alface, tomate, cebola e molho especial.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        },
+        {
+          "id": "smash-cheddar",
+          "name": "Smash Cheddar",
+          "description": "Pão, carne smash 90g, cheddar cremoso, bacon, cebola caramelizada e molho especial.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        },
+        {
+          "id": "smash-salada",
+          "name": "Smash Salada",
+          "description": "Pão, carne smash 90g, queijo, alface, tomate, cebola roxa e maionese verde.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        },
+        {
+          "id": "tia-penha-especial",
+          "name": "Tia Penha Especial",
+          "description": "O carro-chefe da casa! Receita exclusiva da Tia Penha com ingredientes selecionados.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        },
+        {
+          "id": "x-tudo",
+          "name": "X-Tudo da Tia",
+          "description": "Pão, carne, presunto, queijo, ovo, bacon, alface, tomate, milho, batata palha e molho especial.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "entradas",
+      "name": "Entradas",
+      "icon": "🍟",
+      "items": [
+        {
+          "id": "batata-frita",
+          "name": "Batata Frita",
+          "description": "Porção generosa de batata frita crocante com sal e temperos da casa.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        },
+        {
+          "id": "batata-cheddar-bacon",
+          "name": "Batata Cheddar e Bacon",
+          "description": "Batata frita coberta com cheddar cremoso e bacon crocante.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        },
+        {
+          "id": "onion-rings",
+          "name": "Onion Rings",
+          "description": "Anéis de cebola empanados e fritos até ficarem dourados e crocantes.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        },
+        {
+          "id": "nuggets",
+          "name": "Nuggets",
+          "description": "Porção de nuggets de frango crocantes com molho à escolha.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "sobremesas",
+      "name": "Sobremesas",
+      "icon": "🍫",
+      "items": [
+        {
+          "id": "brownie",
+          "name": "Brownie",
+          "description": "Brownie artesanal de chocolate meio amargo, quentinho e macio por dentro.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        },
+        {
+          "id": "brownie-sorvete",
+          "name": "Brownie com Sorvete",
+          "description": "Brownie artesanal acompanhado de uma bola de sorvete de creme.",
+          "price": null,
+          "image": null,
+          "featured": true,
+          "placeholder": true
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas",
+      "icon": "🥤",
+      "items": [
+        {
+          "id": "refrigerante-lata",
+          "name": "Refrigerante Lata",
+          "description": "Coca-Cola, Guaraná, Sprite ou Fanta — lata 350ml.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        },
+        {
+          "id": "suco-natural",
+          "name": "Suco Natural",
+          "description": "Suco natural da fruta. Consulte os sabores disponíveis.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        },
+        {
+          "id": "agua",
+          "name": "Água Mineral",
+          "description": "Água mineral sem gás 500ml.",
+          "price": null,
+          "image": null,
+          "featured": false,
+          "placeholder": true
+        }
+      ]
+    }
+  ],
+  "_nota": "ATENÇÃO: Todos os preços estão como null (placeholder). Substituir pelos preços reais do cardápio. As imagens também devem ser substituídas pelos caminhos das fotos reais dos produtos."
+}
