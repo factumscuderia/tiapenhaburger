@@ -151,11 +151,11 @@ export default function OJeitoDaTia() {
               </svg>
             </div>
 
-            {/* Card com o Vídeo Real da Chapa (Tamanho Original, Sem Cortes, Com Som) */}
-            <div className="w-full max-w-md rounded-2xl bg-[#1b0f11]/95 border border-[var(--penha-gold)]/40 p-4 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl group hover:border-[var(--penha-gold)] transition-all duration-300">
+            {/* Card com o Vídeo Real da Chapa (Tamanho Original, Sem Bordas Pretas, Sem 'Assistir com som') */}
+            <div className="w-full max-w-[300px] sm:max-w-[320px] mx-auto rounded-2xl bg-[#1b0f11]/95 border border-[var(--penha-gold)]/40 p-3 sm:p-3.5 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl group hover:border-[var(--penha-gold)] transition-all duration-300">
               
               {/* Header do Card */}
-              <div className="flex items-center justify-between mb-3 pb-2 border-b border-white/10">
+              <div className="flex items-center justify-between mb-2.5 pb-2 border-b border-white/10">
                 <div className="flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse" />
                   <span className="font-slab text-xs font-bold text-[var(--penha-cream)] uppercase tracking-wider">
@@ -167,43 +167,16 @@ export default function OJeitoDaTia() {
                 </span>
               </div>
 
-              {/* Player do Vídeo (Tamanho original sem crop, com som controlado pelo usuário) */}
-              <div className="relative rounded-xl overflow-hidden bg-black/90 border border-white/10 shadow-inner flex items-center justify-center">
+              {/* Player do Vídeo sem bordas pretas, tamanho original, som ativado via controles nativos */}
+              <div className="relative rounded-xl overflow-hidden border border-white/10 shadow-inner">
                 <video
                   ref={videoRef}
                   src="/images/burger-video.mp4"
                   playsInline
                   controls
                   preload="metadata"
-                  onPlay={() => setIsPlaying(true)}
-                  onPause={() => setIsPlaying(false)}
-                  className="w-full h-auto max-h-[460px] object-contain rounded-xl block"
+                  className="w-full h-auto max-h-[500px] object-cover rounded-xl block"
                 />
-
-                {/* Overlay inicial com botão para dar Play com Som */}
-                {!isPlaying && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (videoRef.current) {
-                        videoRef.current.muted = false;
-                        videoRef.current.play();
-                        setIsPlaying(true);
-                      }
-                    }}
-                    className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 hover:bg-black/45 backdrop-blur-[2px] transition-all cursor-pointer z-10 group/play"
-                    aria-label="Dar play no vídeo com som"
-                  >
-                    <div className="w-16 h-16 rounded-full bg-[var(--penha-gold)] text-[var(--bg-dark)] flex items-center justify-center shadow-[0_0_35px_rgba(233,180,76,0.7)] group-hover/play:scale-110 transition-transform">
-                      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" className="ml-1">
-                        <polygon points="5 3 19 12 5 21 5 3" />
-                      </svg>
-                    </div>
-                    <span className="mt-3 text-xs font-slab font-bold text-[var(--penha-cream)] tracking-wider uppercase bg-black/80 px-3.5 py-1.5 rounded-full border border-[var(--penha-gold)]/30 shadow-lg">
-                      Assistir com som ▶
-                    </span>
-                  </button>
-                )}
               </div>
 
               {/* Informações explicativas */}

@@ -48,26 +48,27 @@ export default function Cardapio() {
     <section
       ref={sectionRef}
       id="cardapio"
-      className="relative section-padding overflow-hidden"
+      className="relative section-padding overflow-hidden scroll-mt-24"
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-dark)] via-[var(--bg-card)] to-[var(--bg-dark)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-dark)] via-[var(--bg-card)] to-[var(--bg-dark)] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1200px] mx-auto">
-        {/* Título */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
-          className="text-center mb-12"
-        >
-          <span className="font-slab text-[var(--penha-gold)] text-sm font-semibold tracking-widest uppercase block mb-2">
-            Cardápio
-          </span>
-          <h2 className="font-display text-5xl md:text-7xl text-[var(--penha-cream)] leading-none">
-            NOSSOS SABORES
+        {/* Título da Seção */}
+        <div className="text-center mb-10 pt-2">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 mb-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--penha-gold)] animate-pulse" />
+            <span className="font-slab text-[var(--penha-gold)] text-xs font-bold tracking-widest uppercase">
+              Tradicional & Artesanal
+            </span>
+          </div>
+          <h2 className="font-display text-5xl sm:text-6xl md:text-7xl text-[var(--penha-cream)] leading-none uppercase tracking-tight">
+            NOSSO CARDÁPIO
           </h2>
-        </motion.div>
+          <p className="mt-3 font-body text-[var(--penha-cream)]/70 text-sm sm:text-base max-w-lg mx-auto">
+            Hambúrgueres preparados na chapa bem quente, entradas crocantes e sobremesas especiais da Tia Penha.
+          </p>
+        </div>
 
         {/* Abas de categoria */}
         <motion.div
