@@ -41,7 +41,7 @@ export default function OJeitoDaTia() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="font-display text-5xl md:text-7xl text-[var(--penha-cream)] leading-none">
             O JEITO DA
@@ -51,56 +51,55 @@ export default function OJeitoDaTia() {
           </span>
         </motion.div>
 
-        {/* Cards + Burger */}
-        <div className="relative">
-          {/* Burger central flutuante — PLACEHOLDER */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.6 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
-            className="hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none"
-          >
-            <div className="w-72 h-72 rounded-full overflow-hidden animate-float border-2 border-[var(--penha-cream)]/10 shadow-2xl">
-              <img
-                src="/images/exploded-burger.jpg"
-                alt="Hambúrguer artesanal"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
+        {/* Imagem do burger — área separada, acima dos cards */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
+          className="flex justify-center mb-14"
+        >
+          <div className="animate-float relative" style={{ isolation: "isolate" }}>
+            <div className="absolute inset-0 bg-[var(--bg-dark)] rounded-full blur-2xl opacity-80" />
+            <img
+              src="/images/burger-exploded.jpg"
+              alt="Hambúrguer artesanal desconstruído"
+              className="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain drop-shadow-[0_20px_50px_rgba(165,15,32,0.35)]"
+              style={{ mixBlendMode: "lighten" }}
+            />
+          </div>
+        </motion.div>
 
-          {/* Grid de cards */}
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-            {cards.map((card, i) => (
-              <motion.div
-                key={card.num}
-                initial={{ opacity: 0, y: 60 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
-                className="glass-card p-8 relative group hover:border-[var(--penha-gold)]/20 transition-all duration-500"
-              >
-                {/* Número de fundo */}
-                <span className="absolute top-4 right-6 font-display text-8xl text-[var(--penha-cream)]/[0.04] leading-none select-none">
+        {/* Grid de cards — área separada */}
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {cards.map((card, i) => (
+            <motion.div
+              key={card.num}
+              initial={{ opacity: 0, y: 60 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
+              className="glass-card p-8 relative group hover:border-[var(--penha-gold)]/20 transition-all duration-500"
+            >
+              {/* Número de fundo */}
+              <span className="absolute top-4 right-6 font-display text-8xl text-[var(--penha-cream)]/[0.04] leading-none select-none">
+                {card.num}
+              </span>
+
+              {/* Ícone dourado */}
+              <div className="w-12 h-12 rounded-full border border-[var(--penha-gold)]/30 flex items-center justify-center mb-6 group-hover:bg-[var(--penha-gold)]/10 transition-colors">
+                <span className="text-[var(--penha-gold)] font-slab font-bold text-sm">
                   {card.num}
                 </span>
+              </div>
 
-                {/* Ícone dourado */}
-                <div className="w-12 h-12 rounded-full border border-[var(--penha-gold)]/30 flex items-center justify-center mb-6 group-hover:bg-[var(--penha-gold)]/10 transition-colors">
-                  <span className="text-[var(--penha-gold)] font-slab font-bold text-sm">
-                    {card.num}
-                  </span>
-                </div>
+              <h3 className="font-slab text-[var(--penha-cream)] text-lg font-bold mb-4 leading-tight">
+                {card.title}
+              </h3>
 
-                <h3 className="font-slab text-[var(--penha-cream)] text-lg font-bold mb-4 leading-tight">
-                  {card.title}
-                </h3>
-
-                <p className="font-body text-[var(--penha-cream)]/60 text-sm leading-relaxed">
-                  {card.text}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+              <p className="font-body text-[var(--penha-cream)]/60 text-sm leading-relaxed">
+                {card.text}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
