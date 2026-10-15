@@ -4,7 +4,11 @@ import { useState, useEffect } from "react";
 import { LINKS, ADDRESS, HOURS, SITE_CONFIG } from "@/lib/config";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState(2026);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="relative bg-[var(--penha-burgundy)]/40 border-t border-[var(--penha-cream)]/5">
