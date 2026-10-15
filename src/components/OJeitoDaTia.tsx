@@ -60,11 +60,12 @@ export default function OJeitoDaTia() {
             transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
             className="hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none"
           >
-            <div className="w-72 h-72 rounded-full img-placeholder animate-float flex flex-col items-center justify-center gap-2">
-              <span className="text-7xl">🍔</span>
-              <span className="text-xs text-[var(--penha-cream)]/25">
-                Foto do burger
-              </span>
+            <div className="w-72 h-72 rounded-full overflow-hidden animate-float border-2 border-[var(--penha-cream)]/10 shadow-2xl">
+              <img
+                src="/images/exploded-burger.jpg"
+                alt="Hambúrguer artesanal"
+                className="w-full h-full object-cover"
+              />
             </div>
           </motion.div>
 

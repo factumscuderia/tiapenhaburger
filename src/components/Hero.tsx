@@ -121,14 +121,13 @@ export default function Hero() {
               </svg>
             </div>
 
-            {/* Imagem do burger — PLACEHOLDER */}
+            {/* Imagem do burger */}
             <div className="relative w-full max-w-lg aspect-square">
-              <div className="w-full h-full rounded-3xl img-placeholder flex flex-col items-center justify-center gap-3">
-                <span className="text-6xl">🍔</span>
-                <span className="text-sm text-[var(--penha-cream)]/30 font-body">
-                  Foto do burger em destaque
-                </span>
-              </div>
+              <img
+                src="/images/hero-burger.jpg"
+                alt="Hambúrguer Tia Penha Burger"
+                className="w-full h-full object-cover rounded-3xl"
+              />
 
               {/* Decoração glow atrás */}
               <div className="absolute inset-0 -z-10 bg-[var(--penha-red)]/20 blur-[80px] rounded-full" />
