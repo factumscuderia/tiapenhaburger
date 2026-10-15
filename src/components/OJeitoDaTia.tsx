@@ -87,15 +87,15 @@ export default function OJeitoDaTia() {
               Cada hambúrguer é uma obra de arte na chapa quente. Carne 100% bovina fresca selecionada, prensada e selada com perfeição, queijo derretido no ponto e ingredientes colhidos a dedo.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-2 justify-center lg:justify-start">
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[var(--penha-red)]/25 text-[var(--penha-cream)] border border-[var(--penha-red)]/40">
-                🥩 Blend Artesanal 100% Fresco
+            <div className="mt-6 flex flex-wrap gap-2.5 justify-center lg:justify-start">
+              <span className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[var(--penha-red)]/20 text-[var(--penha-cream)] border border-[var(--penha-red)]/40">
+                Blend Artesanal 100% Fresco
               </span>
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[var(--penha-gold)]/15 text-[var(--penha-gold)] border border-[var(--penha-gold)]/30">
-                🔥 Prensado na Chapa Quente
+              <span className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[var(--penha-gold)]/15 text-[var(--penha-gold)] border border-[var(--penha-gold)]/30">
+                Prensado na Chapa Quente
               </span>
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white/5 text-[var(--penha-cream)]/80 border border-white/10">
-                🥖 Pão Selado na Manteiga
+              <span className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white/5 text-[var(--penha-cream)]/80 border border-white/10">
+                Pão Selado na Manteiga
               </span>
             </div>
           </motion.div>
@@ -151,49 +151,59 @@ export default function OJeitoDaTia() {
               </svg>
             </div>
 
-            {/* Card com o Vídeo Real da Chapa */}
-            <div className="w-full max-w-sm rounded-2xl bg-[#1b0f11]/90 border border-[var(--penha-gold)]/40 p-4 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl group hover:border-[var(--penha-gold)] transition-all duration-300">
+            {/* Card com o Vídeo Real da Chapa (Tamanho Original, Sem Cortes, Com Som) */}
+            <div className="w-full max-w-md rounded-2xl bg-[#1b0f11]/95 border border-[var(--penha-gold)]/40 p-4 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl group hover:border-[var(--penha-gold)] transition-all duration-300">
               
               {/* Header do Card */}
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-white/10">
                 <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-ping" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse" />
                   <span className="font-slab text-xs font-bold text-[var(--penha-cream)] uppercase tracking-wider">
                     Preparado na Chapa
                   </span>
                 </div>
                 <span className="font-display text-[10px] tracking-widest text-[var(--penha-gold)] bg-[var(--penha-gold)]/10 px-2 py-0.5 rounded border border-[var(--penha-gold)]/30">
-                  SMASH BURGER
+                  VÍDEO REAL
                 </span>
               </div>
 
-              {/* Player do Vídeo enviado pelo usuário */}
-              <div
-                onClick={toggleVideo}
-                className="relative rounded-xl overflow-hidden aspect-[4/3] bg-black/60 border border-white/10 cursor-pointer shadow-inner"
-              >
+              {/* Player do Vídeo (Tamanho original sem crop, com som controlado pelo usuário) */}
+              <div className="relative rounded-xl overflow-hidden bg-black/90 border border-white/10 shadow-inner flex items-center justify-center">
                 <video
                   ref={videoRef}
                   src="/images/burger-video.mp4"
-                  autoPlay
-                  loop
-                  muted
                   playsInline
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  controls
+                  preload="metadata"
+                  onPlay={() => setIsPlaying(true)}
+                  onPause={() => setIsPlaying(false)}
+                  className="w-full h-auto max-h-[460px] object-contain rounded-xl block"
                 />
 
-                {/* Overlay gradiente inferior no vídeo */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
-
-                {/* Badge no vídeo */}
-                <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white/90 text-xs pointer-events-none">
-                  <span className="bg-black/60 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-medium border border-white/10">
-                    {isPlaying ? "▶ Reproduzindo" : "⏸ Pausado"}
-                  </span>
-                  <span className="text-[10px] text-[var(--penha-cream)]/70">
-                    Clique p/ pausar
-                  </span>
-                </div>
+                {/* Overlay inicial com botão para dar Play com Som */}
+                {!isPlaying && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (videoRef.current) {
+                        videoRef.current.muted = false;
+                        videoRef.current.play();
+                        setIsPlaying(true);
+                      }
+                    }}
+                    className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 hover:bg-black/45 backdrop-blur-[2px] transition-all cursor-pointer z-10 group/play"
+                    aria-label="Dar play no vídeo com som"
+                  >
+                    <div className="w-16 h-16 rounded-full bg-[var(--penha-gold)] text-[var(--bg-dark)] flex items-center justify-center shadow-[0_0_35px_rgba(233,180,76,0.7)] group-hover/play:scale-110 transition-transform">
+                      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" className="ml-1">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                      </svg>
+                    </div>
+                    <span className="mt-3 text-xs font-slab font-bold text-[var(--penha-cream)] tracking-wider uppercase bg-black/80 px-3.5 py-1.5 rounded-full border border-[var(--penha-gold)]/30 shadow-lg">
+                      Assistir com som ▶
+                    </span>
+                  </button>
+                )}
               </div>
 
               {/* Informações explicativas */}

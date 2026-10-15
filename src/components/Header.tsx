@@ -87,9 +87,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             {/* CTA Desktop */}
             <a
-              href={LINKS.delivery}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#cardapio"
               className="hidden md:inline-flex btn-gold btn-gold-pulse text-xs px-5 py-2.5"
             >
               PEÇA AGORA
@@ -235,9 +233,7 @@ export default function Header() {
             {/* CTA no fundo */}
             <div className="p-6 pb-10">
               <a
-                href={LINKS.delivery}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#cardapio"
                 className="btn-gold btn-gold-pulse w-full justify-center text-base py-4"
                 onClick={() => setMobileOpen(false)}
               >
