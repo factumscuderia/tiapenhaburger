@@ -18,10 +18,12 @@ export default function Footer() {
           {/* Logo & About */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-12 h-12 rounded-full bg-[var(--penha-red)] flex items-center justify-center border border-[var(--penha-cream)]/10">
-                <span className="font-slab text-[var(--penha-cream)] text-sm font-bold">
-                  TP
-                </span>
+              <div className="w-12 h-12 rounded-full overflow-hidden border border-[var(--penha-gold)]/30 shadow-md flex items-center justify-center bg-[var(--penha-burgundy)] flex-shrink-0 p-0.5">
+                <img
+                  src="/images/logo.png"
+                  alt="Tia Penha Burger"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <span className="font-display text-lg text-[var(--penha-cream)] block leading-none">

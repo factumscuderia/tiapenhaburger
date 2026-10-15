@@ -22,11 +22,15 @@ export default function LoadingScreen() {
         >
           {/* Logo animada */}
           <motion.div
-            animate={{ rotate: [0, 10, -10, 5, 0], scale: [1, 1.05, 1] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-28 h-28 rounded-full bg-[var(--penha-red)] flex items-center justify-center border-2 border-[var(--penha-cream)]/20 mb-8"
+            animate={{ rotate: [0, 6, -6, 3, 0], scale: [1, 1.04, 1] }}
+            transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-32 h-32 rounded-full overflow-hidden border-2 border-[var(--penha-gold)]/40 shadow-2xl mb-8 flex items-center justify-center bg-[var(--penha-burgundy)] p-1"
           >
-            <span className="font-slab text-[var(--penha-cream)] text-3xl font-bold">TP</span>
+            <img
+              src="/images/logo.png"
+              alt="Tia Penha Burger"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
 
           {/* Texto */}

@@ -42,11 +42,13 @@ export default function Header() {
               transition={{ duration: 0.6 }}
               className="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-[var(--penha-cream)]/20"
             >
-              {/* PLACEHOLDER: Substituir pela logo real */}
-              <div className="w-full h-full bg-[var(--penha-red)] flex items-center justify-center">
-                <span className="font-slab text-[var(--penha-cream)] text-xs font-bold leading-tight text-center">
-                  TP
-                </span>
+              {/* Logo da Marca */}
+              <div className="w-full h-full bg-[var(--penha-burgundy)] flex items-center justify-center p-0.5">
+                <img
+                  src="/images/logo.png"
+                  alt="Tia Penha Burger"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
           </a>
@@ -192,8 +194,12 @@ export default function Header() {
 
             {/* Logo grande no topo */}
             <div className="flex justify-center mb-8">
-              <div className="w-24 h-24 rounded-full bg-[var(--penha-burgundy)] flex items-center justify-center border-2 border-[var(--penha-cream)]/20">
-                <span className="font-slab text-[var(--penha-cream)] text-2xl font-bold">TP</span>
+              <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[var(--penha-gold)]/40 shadow-xl bg-[var(--penha-burgundy)] flex items-center justify-center p-1">
+                <img
+                  src="/images/logo.png"
+                  alt="Tia Penha Burger"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
