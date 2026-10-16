@@ -56,18 +56,9 @@ export default function Cardapio() {
       <div className="relative z-10 max-w-[1200px] mx-auto">
         {/* Título da Seção */}
         <div className="text-center mb-10 pt-2">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 mb-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--penha-gold)] animate-pulse" />
-            <span className="font-slab text-[var(--penha-gold)] text-xs font-bold tracking-widest uppercase">
-              Tradicional & Artesanal
-            </span>
-          </div>
           <h2 className="font-display text-5xl sm:text-6xl md:text-7xl text-[var(--penha-cream)] leading-none uppercase tracking-tight">
             NOSSO CARDÁPIO
           </h2>
-          <p className="mt-3 font-body text-[var(--penha-cream)]/70 text-sm sm:text-base max-w-lg mx-auto">
-            Hambúrgueres preparados na chapa bem quente, entradas crocantes e sobremesas especiais da Tia Penha.
-          </p>
         </div>
 
         {/* Abas de categoria */}
