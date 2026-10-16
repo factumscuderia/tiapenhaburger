@@ -1,0 +1,3531 @@
+{
+  "payment_types": [
+    {
+      "id_store_payment_type": 639666,
+      "desc_store_payment_type": "Dinheiro",
+      "payment_template": 0,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Com troco"
+    },
+    {
+      "id_store_payment_type": 639667,
+      "desc_store_payment_type": "Débito",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 639668,
+      "desc_store_payment_type": "Crédito",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 639669,
+      "desc_store_payment_type": "Vale",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 639671,
+      "desc_store_payment_type": "Pago Online",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 639672,
+      "desc_store_payment_type": "Pago Online via Pix",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 639673,
+      "desc_store_payment_type": "Pagamento não cadastrado",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 639674,
+      "desc_store_payment_type": "Voucher Parceiro Desconto",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 639675,
+      "desc_store_payment_type": "Voucher Parceiro Entrega",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 640942,
+      "desc_store_payment_type": "PIX",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 659111,
+      "desc_store_payment_type": "Pix - iFood Pago",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    },
+    {
+      "id_store_payment_type": 659112,
+      "desc_store_payment_type": "Crédito - iFood Pago",
+      "payment_template": 1,
+      "enabled": "Y",
+      "on_the_arm": "N",
+      "desc_payment_template": "Sem troco"
+    }
+  ],
+  "choices": [
+    {
+      "id_store_choice": 2626419,
+      "desc_store_choice": "ACRESCIMOS HAMBURGUERES",
+      "desc_store_choice_delivery": "COMPLEMENTOS (OPCIONAIS):",
+      "updated_at": "2026-07-16T23:15:48.000Z",
+      "choice_type": 1,
+      "min_choices": 0,
+      "max_choices": 5,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 23608861,
+          "desc_store_choice_item": "HAMBÚRGUER EXTRA",
+          "desc_store_choice_item_deli": "",
+          "updated_at": "2026-07-16T23:15:48.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 23608861,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24784954,
+              "aditional_price": 16,
+              "id_store_choice_item": 23608861,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23608862,
+          "desc_store_choice_item": "QUEIJO",
+          "desc_store_choice_item_deli": "",
+          "updated_at": "2026-07-16T23:15:48.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 23608862,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24784955,
+              "aditional_price": 4,
+              "id_store_choice_item": 23608862,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23608863,
+          "desc_store_choice_item": "BACON",
+          "desc_store_choice_item_deli": "",
+          "updated_at": "2026-07-16T23:15:48.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 23608863,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24784956,
+              "aditional_price": 8,
+              "id_store_choice_item": 23608863,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23608865,
+          "desc_store_choice_item": "CEBOLA",
+          "desc_store_choice_item_deli": "",
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 3,
+          "enabled": "Y",
+          "integration_code": 23608865,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24784958,
+              "aditional_price": 4,
+              "id_store_choice_item": 23608865,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23608866,
+          "desc_store_choice_item": "COGUMELO",
+          "desc_store_choice_item_deli": "",
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 4,
+          "enabled": "Y",
+          "integration_code": 23608866,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24784959,
+              "aditional_price": 5,
+              "id_store_choice_item": 23608866,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23678036,
+          "desc_store_choice_item": "OVO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 5,
+          "enabled": "Y",
+          "integration_code": 23678036,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24831464,
+              "aditional_price": 4,
+              "id_store_choice_item": 23678036,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23728121,
+          "desc_store_choice_item": "PICLES",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 6,
+          "enabled": "Y",
+          "integration_code": 23728121,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24869196,
+              "aditional_price": 4,
+              "id_store_choice_item": 23728121,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23765241,
+          "desc_store_choice_item": "GELEIA JAB",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 7,
+          "enabled": "Y",
+          "integration_code": 23765241,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24898390,
+              "aditional_price": 8,
+              "id_store_choice_item": 23765241,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 23765242,
+          "desc_store_choice_item": "SALADA (ALFACE E TOMATE)",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 8,
+          "enabled": "Y",
+          "integration_code": 23765242,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 24898391,
+              "aditional_price": 4,
+              "id_store_choice_item": 23765242,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 25792916,
+          "desc_store_choice_item": "CEBOLA CARAMELIZADA",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 9,
+          "enabled": "Y",
+          "integration_code": 25792916,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 26305147,
+              "aditional_price": 4,
+              "id_store_choice_item": 25792916,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 25792917,
+          "desc_store_choice_item": "MAIONESE DE BACON",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-16T23:15:49.000Z",
+          "detail": null,
+          "order": 10,
+          "enabled": "Y",
+          "integration_code": 25792917,
+          "img_path": null,
+          "id_store_choice": 2626419,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 26305148,
+              "aditional_price": 4,
+              "id_store_choice_item": 25792917,
+              "id_store_variation": 168438
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2633793,
+      "desc_store_choice": "BEBIDAS",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-07-30T03:21:49.000Z",
+      "choice_type": 1,
+      "min_choices": 0,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 23656521,
+          "desc_store_choice_item": "SEM ACUCAR",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-07T21:56:35.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 23656521,
+          "img_path": null,
+          "id_store_choice": 2633793,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23656522,
+          "desc_store_choice_item": "COM ACUCAR",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-07T21:56:35.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 23656522,
+          "img_path": null,
+          "id_store_choice": 2633793,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23678057,
+          "desc_store_choice_item": "GELO E LIMAO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-08T22:46:22.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 23678057,
+          "img_path": null,
+          "id_store_choice": 2633793,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23678083,
+          "desc_store_choice_item": "GELO E LARANJA",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-08T22:49:29.000Z",
+          "detail": null,
+          "order": 3,
+          "enabled": "Y",
+          "integration_code": 23678083,
+          "img_path": null,
+          "id_store_choice": 2633793,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25105304,
+          "desc_store_choice_item": "GELO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-06-17T23:46:49.000Z",
+          "detail": null,
+          "order": 4,
+          "enabled": "Y",
+          "integration_code": 25105304,
+          "img_path": null,
+          "id_store_choice": 2633793,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25105305,
+          "desc_store_choice_item": "SEM GELO SEM LIMÃO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-06-17T23:46:49.000Z",
+          "detail": null,
+          "order": 5,
+          "enabled": "Y",
+          "integration_code": 25105305,
+          "img_path": null,
+          "id_store_choice": 2633793,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2633866,
+      "desc_store_choice": "VIAGEM",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-04-07T23:27:04.000Z",
+      "choice_type": 1,
+      "min_choices": 0,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 23657072,
+          "desc_store_choice_item": "PARA VIAGEM",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-07T23:27:04.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 23657072,
+          "img_path": null,
+          "id_store_choice": 2633866,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2641245,
+      "desc_store_choice": "SABORES",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-04-14T19:12:44.000Z",
+      "choice_type": 1,
+      "min_choices": 0,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 23700562,
+          "desc_store_choice_item": "TANGERINA ",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-09T21:43:10.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 23700562,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23700563,
+          "desc_store_choice_item": "MORANGO ",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-09T21:43:10.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 23700563,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23700564,
+          "desc_store_choice_item": "MACA VERDE",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-09T21:43:11.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 23700564,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23700565,
+          "desc_store_choice_item": "RED MINT",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-09T21:43:11.000Z",
+          "detail": null,
+          "order": 3,
+          "enabled": "Y",
+          "integration_code": 23700565,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23700566,
+          "desc_store_choice_item": "RED MINT ZERO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-09T21:43:11.000Z",
+          "detail": null,
+          "order": 4,
+          "enabled": "Y",
+          "integration_code": 23700566,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23700567,
+          "desc_store_choice_item": "ST PIERRE TROPICAL",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-09T21:43:11.000Z",
+          "detail": null,
+          "order": 5,
+          "enabled": "Y",
+          "integration_code": 23700567,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23700568,
+          "desc_store_choice_item": "ST PIERRE ZERO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-09T21:43:11.000Z",
+          "detail": null,
+          "order": 6,
+          "enabled": "Y",
+          "integration_code": 23700568,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23728209,
+          "desc_store_choice_item": "ABACAXI",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-12T13:48:11.000Z",
+          "detail": null,
+          "order": 7,
+          "enabled": "Y",
+          "integration_code": 23728209,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23728210,
+          "desc_store_choice_item": "FRAMBOESA",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-12T13:48:11.000Z",
+          "detail": null,
+          "order": 8,
+          "enabled": "Y",
+          "integration_code": 23728210,
+          "img_path": null,
+          "id_store_choice": 2641245,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2649984,
+      "desc_store_choice": "REFIL",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-04-14T19:15:07.000Z",
+      "choice_type": 1,
+      "min_choices": 0,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 23765248,
+          "desc_store_choice_item": "PINK",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-14T19:15:07.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 23765248,
+          "img_path": null,
+          "id_store_choice": 2649984,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23765249,
+          "desc_store_choice_item": "YELLOW",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-14T19:15:07.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 23765249,
+          "img_path": null,
+          "id_store_choice": 2649984,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23765250,
+          "desc_store_choice_item": "BLUE",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-14T19:15:07.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 23765250,
+          "img_path": null,
+          "id_store_choice": 2649984,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 23765251,
+          "desc_store_choice_item": "GREEN",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-04-14T19:15:07.000Z",
+          "detail": null,
+          "order": 3,
+          "enabled": "Y",
+          "integration_code": 23765251,
+          "img_path": null,
+          "id_store_choice": 2649984,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2754695,
+      "desc_store_choice": "PONTO DA CARNE",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-05-26T20:26:29.000Z",
+      "choice_type": 2,
+      "min_choices": 1,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 24561221,
+          "desc_store_choice_item": "AO PONTO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-05-26T20:26:29.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 24561221,
+          "img_path": null,
+          "id_store_choice": 2754695,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 24561223,
+          "desc_store_choice_item": "MAL PASSADO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-05-26T20:26:29.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 24561223,
+          "img_path": null,
+          "id_store_choice": 2754695,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 24561225,
+          "desc_store_choice_item": "BEM PASSADO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-05-26T20:26:29.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 24561225,
+          "img_path": null,
+          "id_store_choice": 2754695,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2813501,
+      "desc_store_choice": "HAMBURGER",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-06-12T21:05:37.000Z",
+      "choice_type": 1,
+      "min_choices": 1,
+      "max_choices": 99,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 25034114,
+          "desc_store_choice_item": "CHEDDAR",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-06-12T21:05:37.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 25034114,
+          "img_path": null,
+          "id_store_choice": 2813501,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25034115,
+          "desc_store_choice_item": "TIA PENHA",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-06-12T21:05:38.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 25034115,
+          "img_path": null,
+          "id_store_choice": 2813501,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2912756,
+      "desc_store_choice": "ESCOLHA O SABOR:",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-07-28T05:38:32.000Z",
+      "choice_type": 2,
+      "min_choices": 1,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 25946067,
+          "desc_store_choice_item": "MARACUJÁ",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:36:05.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 25946067,
+          "img_path": null,
+          "id_store_choice": 2912756,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946068,
+          "desc_store_choice_item": "MORANGO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:36:23.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 25946068,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/432085381aa835bc4ec4ce67e6fe17e3.jpeg",
+          "id_store_choice": 2912756,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946069,
+          "desc_store_choice_item": "OREO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:37:14.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 25946069,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/6fa7876a2ad64e0893843a0c0ab6771d.jpeg",
+          "id_store_choice": 2912756,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946070,
+          "desc_store_choice_item": "NUTELLA",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:37:34.000Z",
+          "detail": null,
+          "order": 3,
+          "enabled": "Y",
+          "integration_code": 25946070,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/54a453a565928fc9349d82b0a930af3c.jpeg",
+          "id_store_choice": 2912756,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946071,
+          "desc_store_choice_item": "PISTACHE",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:38:48.000Z",
+          "detail": null,
+          "order": 4,
+          "enabled": "Y",
+          "integration_code": 25946071,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/d4e708459a748da293cfac62b7424ba9.jpeg",
+          "id_store_choice": 2912756,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946072,
+          "desc_store_choice_item": "CHOCOLATE",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:36:06.000Z",
+          "detail": null,
+          "order": 5,
+          "enabled": "Y",
+          "integration_code": 25946072,
+          "img_path": null,
+          "id_store_choice": 2912756,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2912757,
+      "desc_store_choice": "ESCOLHA:",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-07-28T05:45:42.000Z",
+      "choice_type": 2,
+      "min_choices": 1,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 25946073,
+          "desc_store_choice_item": "COM GÁS",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:45:43.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 25946073,
+          "img_path": null,
+          "id_store_choice": 2912757,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946074,
+          "desc_store_choice_item": "SEM GÁS",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:45:43.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 25946074,
+          "img_path": null,
+          "id_store_choice": 2912757,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2912758,
+      "desc_store_choice": "ESCOLHA O SABOR:",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-07-28T05:53:53.000Z",
+      "choice_type": 2,
+      "min_choices": 1,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 25946075,
+          "desc_store_choice_item": "COCA-COLA",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:53:59.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 25946075,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/00e15940a446c49ba783c03848450352.png",
+          "id_store_choice": 2912758,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946076,
+          "desc_store_choice_item": "COCA-COLA ZERO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:54:03.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 25946076,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/7fee56851fe3524647d8862d3caa6134.png",
+          "id_store_choice": 2912758,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946077,
+          "desc_store_choice_item": "SPRITE",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:54:07.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 25946077,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/6509f6144d97bb6fadfe29bbbbd9293f.png",
+          "id_store_choice": 2912758,
+          "variations": []
+        },
+        {
+          "id_store_choice_item": 25946078,
+          "desc_store_choice_item": "FANTA GUARANÁ",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T05:54:11.000Z",
+          "detail": null,
+          "order": 3,
+          "enabled": "Y",
+          "integration_code": 25946078,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/d1cb5a911e0a5e7bbfdabc0b5e3aad0a.png",
+          "id_store_choice": 2912758,
+          "variations": []
+        }
+      ]
+    },
+    {
+      "id_store_choice": 2912759,
+      "desc_store_choice": "UMA BEBIDA PARA ACOMPANHAR?",
+      "desc_store_choice_delivery": null,
+      "updated_at": "2026-07-28T06:13:27.000Z",
+      "choice_type": 1,
+      "min_choices": 0,
+      "max_choices": 1,
+      "calc_method": 1,
+      "choice_items": [
+        {
+          "id_store_choice_item": 25946079,
+          "desc_store_choice_item": "COCA-COLA",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T06:13:31.000Z",
+          "detail": null,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 25946079,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/b44a397da1590302669cfe95d2e4228b.png",
+          "id_store_choice": 2912759,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 26410453,
+              "aditional_price": 8,
+              "id_store_choice_item": 25946079,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 25946080,
+          "desc_store_choice_item": "COCA-COLA ZERO",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T06:13:34.000Z",
+          "detail": null,
+          "order": 1,
+          "enabled": "Y",
+          "integration_code": 25946080,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/70ea628559bbbce112a806b5d81efb6a.png",
+          "id_store_choice": 2912759,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 26410454,
+              "aditional_price": 8,
+              "id_store_choice_item": 25946080,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 25946081,
+          "desc_store_choice_item": "SPRITE",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T06:13:36.000Z",
+          "detail": null,
+          "order": 2,
+          "enabled": "Y",
+          "integration_code": 25946081,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/f749e891971b834557849442d4b9167a.png",
+          "id_store_choice": 2912759,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 26410455,
+              "aditional_price": 8,
+              "id_store_choice_item": 25946081,
+              "id_store_variation": 168438
+            }
+          ]
+        },
+        {
+          "id_store_choice_item": 25946082,
+          "desc_store_choice_item": "FANTA GUARANÁ",
+          "desc_store_choice_item_deli": null,
+          "updated_at": "2026-07-28T06:13:39.000Z",
+          "detail": null,
+          "order": 3,
+          "enabled": "Y",
+          "integration_code": 25946082,
+          "img_path": "saipos-estatico/img-items/87707/store_choice_item/a6b4f984bd1b2edc87555f2981597dea.png",
+          "id_store_choice": 2912759,
+          "variations": [
+            {
+              "id_store_choice_item_variation": 26410456,
+              "aditional_price": 8,
+              "id_store_choice_item": 25946082,
+              "id_store_variation": 168438
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id_store_item": 34939343,
+      "desc_store_item": "CHEDDAR BACON",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "Clássico que nunca decepciona.\nBlend Angus 160g suculento, cheddar duplo derretido, bacon crocante, cebola caramelizada e maionese de bacon da casa.\nUm hambúrguer intenso, equilibrado e cheio de textura, sabor e crocância em cada mordida.",
+      "identifier_number": "3",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/04a2bf0b6d090f5ad558f5a534ecff69.png",
+      "order": 0,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939345,
+          "id_store_item": 34939343,
+          "id_store_variation": 168438,
+          "price": 42,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939345,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939344,
+          "id_store_item": 34939343,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314627,
+          "id_store_item": 34939343,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939346,
+          "id_store_item": 34939343,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066527,
+          "id_store_item": 34939343,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 39832028,
+      "desc_store_item": "Almofadinha de Queijo Gouda",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-08-01T03:47:08.000Z",
+      "detail": "Palitos de queijo canastra empanados\n",
+      "identifier_number": "13",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 39832030,
+          "id_store_item": 39832028,
+          "id_store_variation": 168438,
+          "price": 29,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 39832030,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 39832029,
+          "id_store_item": 39832028,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 38518420,
+      "desc_store_item": "DOSE CACHAÇA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-06-24T21:29:26.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 38518422,
+          "id_store_item": 38518420,
+          "id_store_variation": 168438,
+          "price": 8,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 38518422,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 38518421,
+          "id_store_item": 38518420,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 38877697,
+      "desc_store_item": "DOSE JACK",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-04T20:27:35.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 38877699,
+          "id_store_item": 38877697,
+          "id_store_variation": 168438,
+          "price": 30,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 38877699,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 38877698,
+          "id_store_item": 38877697,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 38877707,
+      "desc_store_item": "DOSE GIN",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-04T20:28:00.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 38877709,
+          "id_store_item": 38877707,
+          "id_store_variation": 168438,
+          "price": 20,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 38877709,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 38877708,
+          "id_store_item": 38877707,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 39643211,
+      "desc_store_item": "ÁGUA 500ml",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:03:04.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118200,
+      "variations": [
+        {
+          "id_store_item_variation": 39643213,
+          "id_store_item": 39643211,
+          "id_store_variation": 168438,
+          "price": 5,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 39643213,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118200,
+        "desc_store_category_item": "BEBIDAS",
+        "order": 3,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 39643212,
+          "id_store_item": 39643211,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 39643214,
+          "id_store_item": 39643211,
+          "id_store_choice": 2912757,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 39643215,
+      "desc_store_item": "REFRIGERANTE LATA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T05:54:57.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/24c0888f9020e10acdf3ab635f3b53fb.png",
+      "order": 1,
+      "id_store_category_item": 1118200,
+      "variations": [
+        {
+          "id_store_item_variation": 39643217,
+          "id_store_item": 39643215,
+          "id_store_variation": 168438,
+          "price": 8,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 39643217,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118200,
+        "desc_store_category_item": "BEBIDAS",
+        "order": 3,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 39643216,
+          "id_store_item": 39643215,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 39643218,
+          "id_store_item": 39643215,
+          "id_store_choice": 2912758,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 39832022,
+      "desc_store_item": "Anel de Cebola",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-08-01T03:46:42.000Z",
+      "detail": "Palitos de queijo canastra empanados\n",
+      "identifier_number": "13",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 39832024,
+          "id_store_item": 39832022,
+          "id_store_variation": 168438,
+          "price": 25,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 39832024,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 39832023,
+          "id_store_item": 39832022,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35597950,
+      "desc_store_item": "ACRES. PICLES",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-21T19:32:22.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35597952,
+          "id_store_item": 35597950,
+          "id_store_variation": 168438,
+          "price": 4,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35597952,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35597951,
+          "id_store_item": 35597950,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939380,
+      "desc_store_item": "DUPLO BACON",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "Pra quem não faz meio termo.\nDois blends Angus de 160g cada, cheddar duplo derretido, bacon crocante e molho da casa.",
+      "identifier_number": "9",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/2fc0a13246cb73b9081d5060cc4f9775.png",
+      "order": 1,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939382,
+          "id_store_item": 34939380,
+          "id_store_variation": 168438,
+          "price": 48,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939382,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939381,
+          "id_store_item": 34939380,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314582,
+          "id_store_item": 34939380,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939383,
+          "id_store_item": 34939380,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066500,
+          "id_store_item": 34939380,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939419,
+      "desc_store_item": "COXINHA TIA PENHA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-06T12:08:32.000Z",
+      "detail": "A famosa coxinha da casa",
+      "identifier_number": "12",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 34939421,
+          "id_store_item": 34939419,
+          "id_store_variation": 168438,
+          "price": 33,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939421,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939420,
+          "id_store_item": 34939419,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939422,
+      "desc_store_item": "STICK DE QUEIJO CANASTRA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-06T12:09:05.000Z",
+      "detail": "Palitos de queijo canastra empanados\n",
+      "identifier_number": "13",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 34939424,
+          "id_store_item": 34939422,
+          "id_store_variation": 168438,
+          "price": 29,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939424,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939423,
+          "id_store_item": 34939422,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939425,
+      "desc_store_item": "BATATA FRITA 400G",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-06T12:09:33.000Z",
+      "detail": "Porção generosa de batata frita\n",
+      "identifier_number": "14",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 34939427,
+          "id_store_item": 34939425,
+          "id_store_variation": 168438,
+          "price": 39,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939427,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939426,
+          "id_store_item": 34939425,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939428,
+      "desc_store_item": "BATATA CHEDDAR & BACON",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-06T12:09:53.000Z",
+      "detail": "Batata frita com cheddar e bacon\n",
+      "identifier_number": "15",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 34939430,
+          "id_store_item": 34939428,
+          "id_store_variation": 168438,
+          "price": 49,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939430,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939429,
+          "id_store_item": 34939428,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939431,
+      "desc_store_item": "BATATA COM PASTRAMI",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-06T12:10:13.000Z",
+      "detail": "Batata frita com pastrami",
+      "identifier_number": "16",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 34939433,
+          "id_store_item": 34939431,
+          "id_store_variation": 168438,
+          "price": 55,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939433,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939432,
+          "id_store_item": 34939431,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35123775,
+      "desc_store_item": "ACRES. MAIONESE A PARTE",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-09T00:17:23.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35123778,
+          "id_store_item": 35123775,
+          "id_store_variation": 168438,
+          "price": 4,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35123778,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35123777,
+          "id_store_item": 35123775,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064459,
+      "desc_store_item": "SODA ARTESANAL",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-09T21:45:07.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124447,
+      "variations": [
+        {
+          "id_store_item_variation": 35064461,
+          "id_store_item": 35064459,
+          "id_store_variation": 168438,
+          "price": 12.9,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064461,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124447,
+        "desc_store_category_item": "DRINK SEM ALCOOL",
+        "order": 5,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064460,
+          "id_store_item": 35064459,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 35178571,
+          "id_store_item": 35064459,
+          "id_store_choice": 2641245,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064462,
+      "desc_store_item": "LEMONADE",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-09T21:44:51.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124447,
+      "variations": [
+        {
+          "id_store_item_variation": 35064464,
+          "id_store_item": 35064462,
+          "id_store_variation": 168438,
+          "price": 12.9,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064464,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124447,
+        "desc_store_category_item": "DRINK SEM ALCOOL",
+        "order": 5,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064463,
+          "id_store_item": 35064462,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 35066465,
+          "id_store_item": 35064462,
+          "id_store_choice": 2633793,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 35178563,
+          "id_store_item": 35064462,
+          "id_store_choice": 2641245,
+          "order": 1
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064465,
+      "desc_store_item": "SODA RED MINT",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-09T21:44:28.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124447,
+      "variations": [
+        {
+          "id_store_item_variation": 35064467,
+          "id_store_item": 35064465,
+          "id_store_variation": 168438,
+          "price": 14.9,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064467,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124447,
+        "desc_store_category_item": "DRINK SEM ALCOOL",
+        "order": 5,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064466,
+          "id_store_item": 35064465,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 35178555,
+          "id_store_item": 35064465,
+          "id_store_choice": 2641245,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064478,
+      "desc_store_item": "SODA TROPICAL",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-12T13:49:18.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124447,
+      "variations": [
+        {
+          "id_store_item_variation": 35064480,
+          "id_store_item": 35064478,
+          "id_store_variation": 168438,
+          "price": 14.9,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064480,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124447,
+        "desc_store_category_item": "DRINK SEM ALCOOL",
+        "order": 5,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064479,
+          "id_store_item": 35064478,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 35178576,
+          "id_store_item": 35064478,
+          "id_store_choice": 2641245,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064484,
+      "desc_store_item": "REFIL A VONTADE LEMONADE",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-14T19:15:53.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": -1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124447,
+      "variations": [
+        {
+          "id_store_item_variation": 35064486,
+          "id_store_item": 35064484,
+          "id_store_variation": 168438,
+          "price": 19.9,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064486,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124447,
+        "desc_store_category_item": "DRINK SEM ALCOOL",
+        "order": 5,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064485,
+          "id_store_item": 35064484,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064536,
+      "desc_store_item": "GORDONS TROPICAL",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-07T21:46:09.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 35064538,
+          "id_store_item": 35064536,
+          "id_store_variation": 168438,
+          "price": 25,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064538,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064537,
+          "id_store_item": 35064536,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064539,
+      "desc_store_item": "APEROL TROPICAL",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-07T21:46:32.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 35064541,
+          "id_store_item": 35064539,
+          "id_store_variation": 168438,
+          "price": 29.9,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064541,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064540,
+          "id_store_item": 35064539,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064555,
+      "desc_store_item": "HUGO SPRITZ",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-07T21:46:49.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 35064557,
+          "id_store_item": 35064555,
+          "id_store_variation": 168438,
+          "price": 29,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064557,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064556,
+          "id_store_item": 35064555,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064567,
+      "desc_store_item": "CAIPVODKA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-07T21:47:05.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 35064569,
+          "id_store_item": 35064567,
+          "id_store_variation": 168438,
+          "price": 25,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064569,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064568,
+          "id_store_item": 35064567,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35064576,
+      "desc_store_item": "CAIPI SAGATIBA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-07T21:47:26.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 35064578,
+          "id_store_item": 35064576,
+          "id_store_variation": 168438,
+          "price": 20,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35064578,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35064577,
+          "id_store_item": 35064576,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35065501,
+      "desc_store_item": "COMBO",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-06-24T20:14:34.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124455,
+      "variations": [
+        {
+          "id_store_item_variation": 35065503,
+          "id_store_item": 35065501,
+          "id_store_variation": 168438,
+          "price": 300,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35065503,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124455,
+        "desc_store_category_item": "DRINK",
+        "order": 4,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35065502,
+          "id_store_item": 35065501,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35123337,
+      "desc_store_item": "ACRES. HAMBURGUER",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-08T23:56:35.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35123339,
+          "id_store_item": 35123337,
+          "id_store_variation": 168438,
+          "price": 16,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35123339,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35123338,
+          "id_store_item": 35123337,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35123349,
+      "desc_store_item": "ACRES. QUEIJO",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-08T23:57:19.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35123351,
+          "id_store_item": 35123349,
+          "id_store_variation": 168438,
+          "price": 4,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35123351,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35123350,
+          "id_store_item": 35123349,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35123358,
+      "desc_store_item": "ACRES. BACON",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-08T23:57:37.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35123360,
+          "id_store_item": 35123358,
+          "id_store_variation": 168438,
+          "price": 8,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35123360,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35123359,
+          "id_store_item": 35123358,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35123378,
+      "desc_store_item": "ACRES. CEBOLA CARAMELIZADA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-08T23:58:28.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35123380,
+          "id_store_item": 35123378,
+          "id_store_variation": 168438,
+          "price": 4,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35123380,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35123379,
+          "id_store_item": 35123378,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35123391,
+      "desc_store_item": "ACRES. COGUMELO ",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-08T23:58:49.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35123393,
+          "id_store_item": 35123391,
+          "id_store_variation": 168438,
+          "price": 5,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35123393,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35123392,
+          "id_store_item": 35123391,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35123409,
+      "desc_store_item": "ACRES. OVO",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-08T23:59:35.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35123411,
+          "id_store_item": 35123409,
+          "id_store_variation": 168438,
+          "price": 4,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35123411,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35123410,
+          "id_store_item": 35123409,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35351341,
+      "desc_store_item": "ACRES. GELEIA DE JAB A PARTE ",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-14T19:08:48.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 35351343,
+          "id_store_item": 35351341,
+          "id_store_variation": 168438,
+          "price": 8,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35351343,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35351342,
+          "id_store_item": 35351341,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 35351451,
+      "desc_store_item": "REFIL A VONTADE SABORES",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-04-14T19:15:15.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1124447,
+      "variations": [
+        {
+          "id_store_item_variation": 35351453,
+          "id_store_item": 35351451,
+          "id_store_variation": 168438,
+          "price": 0,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 35351453,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1124447,
+        "desc_store_category_item": "DRINK SEM ALCOOL",
+        "order": 5,
+        "enabled": "Y",
+        "print_type": 3,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 35351452,
+          "id_store_item": 35351451,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 35351505,
+          "id_store_item": 35351451,
+          "id_store_choice": 2649984,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 38137424,
+      "desc_store_item": "DADINHO DE TAPIOCA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-06-12T23:13:53.000Z",
+      "detail": "A famosa coxinha da casa",
+      "identifier_number": "12",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 38137426,
+          "id_store_item": 38137424,
+          "id_store_variation": 168438,
+          "price": 29,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 38137426,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 38137425,
+          "id_store_item": 38137424,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 38137455,
+      "desc_store_item": "PASTEL",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-06-12T23:14:09.000Z",
+      "detail": "A famosa coxinha da casa",
+      "identifier_number": "12",
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1118202,
+      "variations": [
+        {
+          "id_store_item_variation": 38137457,
+          "id_store_item": 38137455,
+          "id_store_variation": 168438,
+          "price": 29,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 38137457,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118202,
+        "desc_store_category_item": "ENTRADAS",
+        "order": 0,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 38137456,
+          "id_store_item": 38137455,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 38300794,
+      "desc_store_item": "ACRES. MAIONESE BACON",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-06-17T23:44:02.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 38300796,
+          "id_store_item": 38300794,
+          "id_store_variation": 168438,
+          "price": 4,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 38300796,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 38300795,
+          "id_store_item": 38300794,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 38300782,
+      "desc_store_item": "ACRES. MAIONESE TRUFADA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-06-17T23:43:42.000Z",
+      "detail": null,
+      "identifier_number": null,
+      "print_type": 1,
+      "img_path": null,
+      "order": 1,
+      "id_store_category_item": 1126324,
+      "variations": [
+        {
+          "id_store_item_variation": 38300784,
+          "id_store_item": 38300782,
+          "id_store_variation": 168438,
+          "price": 8,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 38300784,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1126324,
+        "desc_store_category_item": "ACRÉSCIMOS A PARTE",
+        "order": 2,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 38300783,
+          "id_store_item": 38300782,
+          "id_store_choice": 2622682,
+          "order": 0
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939355,
+      "desc_store_item": "GORGONZOLA SPECIAL",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "Intenso, crocante e fora do óbvio.\nBlend Angus 160g suculento, gorgonzola marcante, cebola crispy, farofa de bacon com mel e molho da casa.\nUm burger sofisticado, com contraste perfeito entre cremosidade, crocância e um toque agridoce.",
+      "identifier_number": "6",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/6fca673afb4f6cba8cae79d86b475b58.png",
+      "order": 2,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939357,
+          "id_store_item": 34939355,
+          "id_store_variation": 168438,
+          "price": 47,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939357,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939356,
+          "id_store_item": 34939355,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314611,
+          "id_store_item": 34939355,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939358,
+          "id_store_item": 34939355,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066511,
+          "id_store_item": 34939355,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939373,
+      "desc_store_item": "TIA PENHA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "O clássico feito do jeito certo.\nBlend Angus 160g suculento, queijo prato derretido, salada fresca, cebola roxa, picles e molho especial da casa.\nEquilíbrio perfeito de sabores, leve, marcante e irresistível do primeiro ao último mordida.",
+      "identifier_number": "8",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/d44d7a591b303e38ad1bef5b28d499d5.png",
+      "order": 3,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939375,
+          "id_store_item": 34939373,
+          "id_store_variation": 168438,
+          "price": 44,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939375,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939374,
+          "id_store_item": 34939373,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314596,
+          "id_store_item": 34939373,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939376,
+          "id_store_item": 34939373,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066509,
+          "id_store_item": 34939373,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939339,
+      "desc_store_item": "TRUFADO",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "Sofisticação que derrete na boca.\nBlend Angus 160g suculento, queijo prato duplo bem cremoso e molho trufado com cebola caramelizada.\nUm burger elegante, intenso e extremamente macio, cada mordida é pura experiência.",
+      "identifier_number": "2",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/848f36dee9c6694f4f00a96d1aff653a.png",
+      "order": 4,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939341,
+          "id_store_item": 34939339,
+          "id_store_variation": 168438,
+          "price": 52,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939341,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939340,
+          "id_store_item": 34939339,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314628,
+          "id_store_item": 34939339,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939342,
+          "id_store_item": 34939339,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066537,
+          "id_store_item": 34939339,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939347,
+      "desc_store_item": "SABARA",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "Minas em forma de burger.\nBlend Angus 160g suculento, queijo minas fresco, rúcula e geleia artesanal de jabuticaba.\nO equilíbrio perfeito entre doce, fresco e intenso, um sabor mineiro que surpreende na primeira mordida.",
+      "identifier_number": "4",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/b484eab37fd9de5545f712b80153cf35.png",
+      "order": 5,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939349,
+          "id_store_item": 34939347,
+          "id_store_variation": 168438,
+          "price": 46,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939349,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939348,
+          "id_store_item": 34939347,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314622,
+          "id_store_item": 34939347,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939350,
+          "id_store_item": 34939347,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066526,
+          "id_store_item": 34939347,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939366,
+      "desc_store_item": "CRISPY CHICKEN",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "O frango que virou favorito.\nPeito de frango empanado super crocante, queijo prato derretido, salada fresca e molho da casa.\nLeve, suculento e com a crocância perfeita, impossível comer uma vez só.",
+      "identifier_number": "7",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/2653262dad786e5e1d090b72e38cdb39.png",
+      "order": 6,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939368,
+          "id_store_item": 34939366,
+          "id_store_variation": 168438,
+          "price": 45,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939368,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939367,
+          "id_store_item": 34939366,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314603,
+          "id_store_item": 34939366,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939369,
+          "id_store_item": 34939366,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066510,
+          "id_store_item": 34939366,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 39643231,
+      "desc_store_item": "FUTURO BURGER",
+      "desc_store_item_delivery": null,
+      "updated_at": "2026-07-28T06:20:07.000Z",
+      "detail": "Sabor de verdade, sem abrir mão do planeta.\nHambúrguer vegetariano suculento, queijo prato derretido, salada fresca e molho da casa.\nLeve, equilibrado e cheio de sabor.",
+      "identifier_number": "10",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/efc15d1ef41a46f8ba1426529e2b5830.png",
+      "order": 7,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 39643233,
+          "id_store_item": 39643231,
+          "id_store_variation": 168438,
+          "price": 40,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 39643233,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 39643232,
+          "id_store_item": 39643231,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 39643237,
+          "id_store_item": 39643231,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 39643234,
+          "id_store_item": 39643231,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 39643236,
+          "id_store_item": 39643231,
+          "id_store_choice": 2912759,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    },
+    {
+      "id_store_item": 34939394,
+      "desc_store_item": "KIDS",
+      "desc_store_item_delivery": "KIDS",
+      "updated_at": "2026-07-28T06:15:37.000Z",
+      "detail": "O favorito da criançada! Smash de 80g, queijo prato derretido e molho da casa. Pequeno no tamanho, enorme no sabor. Perfeito para os pequenos apreciadores de hambúrguer.",
+      "identifier_number": "10",
+      "print_type": 1,
+      "img_path": "saipos-estatico/img-items/87707/store_item/77afb72bd53b3e4a80373d14a32ae753.png",
+      "order": 8,
+      "id_store_category_item": 1118201,
+      "variations": [
+        {
+          "id_store_item_variation": 34939396,
+          "id_store_item": 34939394,
+          "id_store_variation": 168438,
+          "price": 35,
+          "order": 0,
+          "enabled": "Y",
+          "integration_code": 34939396,
+          "variation": {
+            "id_store_variation": 168438,
+            "desc_store_variation": "Único",
+            "desc_store_variation_delivery": null,
+            "updated_at": "2026-04-02T13:35:28.000Z"
+          },
+          "promotions": []
+        }
+      ],
+      "category_item": {
+        "id_store_category_item": 1118201,
+        "desc_store_category_item": "HAMBURGUERES",
+        "order": 1,
+        "enabled": "Y",
+        "print_type": 2,
+        "updated_at": "2026-04-23T19:23:38.000Z",
+        "id_store_item_required": null,
+        "availability": []
+      },
+      "choices": [
+        {
+          "id_store_item_choice": 34939395,
+          "id_store_item": 34939394,
+          "id_store_choice": 2622682,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 37314568,
+          "id_store_item": 34939394,
+          "id_store_choice": 2754695,
+          "order": 0
+        },
+        {
+          "id_store_item_choice": 34939397,
+          "id_store_item": 34939394,
+          "id_store_choice": 2626419,
+          "order": 1
+        },
+        {
+          "id_store_item_choice": 35066496,
+          "id_store_item": 34939394,
+          "id_store_choice": 2633866,
+          "order": 2
+        }
+      ],
+      "categories": [],
+      "availability": []
+    }
+  ],
+  "banners": [],
+  "enabled_products": [
+    "PAYMENT_ONLINE"
+  ]
+}
