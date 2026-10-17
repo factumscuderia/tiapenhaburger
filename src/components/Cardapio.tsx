@@ -4,6 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useCart } from "@/contexts/CartContext";
 import { LINKS } from "@/lib/config";
+import BurgerCustomizationModal, {
+  BurgerCustomizationData,
+} from "@/components/BurgerCustomizationModal";
 
 interface MenuItem {
   id: string;
@@ -12,7 +15,7 @@ interface MenuItem {
   price: number | null;
   image: string | null;
   featured: boolean;
-  placeholder: boolean;
+  isBurger?: boolean;
 }
 
 interface MenuCategory {
@@ -24,11 +27,14 @@ interface MenuCategory {
 
 interface MenuData {
   categories: MenuCategory[];
+  burgerCustomization?: BurgerCustomizationData;
 }
 
 export default function Cardapio() {
   const [menu, setMenu] = useState<MenuData | null>(null);
   const [activeCategory, setActiveCategory] = useState(0);
+  const [selectedItemForModal, setSelectedItemForModal] =
+    useState<MenuItem | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
   const { addItem } = useCart();
@@ -98,7 +104,8 @@ export default function Cardapio() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.07 }}
-              className="glass-card group hover:border-[var(--penha-gold)]/20 transition-all duration-500 flex flex-col overflow-hidden"
+              className="glass-card group hover:border-[var(--penha-gold)]/20 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
+              onClick={() => setSelectedItemForModal(item)}
             >
               {/* Imagem / Placeholder */}
               <div className="relative h-44 overflow-hidden bg-[var(--bg-card)]">
@@ -116,39 +123,55 @@ export default function Cardapio() {
                     </span>
                   </div>
                 )}
-                {item.featured && (
-                  <span className="absolute top-3 left-3 px-2.5 py-1 bg-[var(--penha-gold)] text-[var(--bg-dark)] text-[10px] font-bold uppercase rounded-full tracking-wider">
-                    Destaque
-                  </span>
-                )}
+                <div className="absolute top-3 left-3 flex flex-col gap-1">
+                  {item.featured && (
+                    <span className="px-2.5 py-1 bg-[var(--penha-gold)] text-[var(--bg-dark)] text-[10px] font-bold uppercase rounded-full tracking-wider shadow-md">
+                      Destaque
+                    </span>
+                  )}
+                  {item.isBurger && (
+                    <span className="px-2 py-0.5 bg-black/70 backdrop-blur-sm text-[var(--penha-gold)] text-[9px] font-bold uppercase rounded-md tracking-wider border border-[var(--penha-gold)]/30">
+                      Personalizável
+                    </span>
+                  )}
+                </div>
               </div>
 
               {/* Info */}
               <div className="p-5 flex flex-col flex-1">
-                <h3 className="font-slab text-[var(--penha-cream)] text-base font-bold mb-2">
+                <h3 className="font-slab text-[var(--penha-cream)] text-base font-bold mb-2 group-hover:text-[var(--penha-gold)] transition-colors">
                   {item.name}
                 </h3>
-                <p className="font-body text-[var(--penha-cream)]/50 text-xs leading-relaxed mb-4 flex-1">
+                <p className="font-body text-[var(--penha-cream)]/50 text-xs leading-relaxed mb-4 flex-1 line-clamp-3">
                   {item.description}
                 </p>
 
-                <div className="flex items-center justify-between mt-auto">
+                <div className="flex items-center justify-between mt-auto pt-2 border-t border-white/5">
                   <span className="font-slab text-[var(--penha-gold)] text-lg font-bold">
                     {item.price
                       ? `R$ ${item.price.toFixed(2).replace(".", ",")}`
                       : "Consultar"}
                   </span>
                   <button
-                    onClick={() =>
-                      addItem({
-                        id: item.id,
-                        name: item.name,
-                        price: item.price,
-                        image: item.image,
-                      })
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (item.isBurger) {
+                        setSelectedItemForModal(item);
+                      } else {
+                        addItem({
+                          id: item.id,
+                          name: item.name,
+                          price: item.price,
+                          image: item.image,
+                        });
+                      }
+                    }}
+                    className="w-9 h-9 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 flex items-center justify-center hover:bg-[var(--penha-gold)] hover:text-[var(--bg-dark)] text-[var(--penha-gold)] transition-all duration-300 shadow-sm"
+                    aria-label={
+                      item.isBurger
+                        ? `Personalizar ${item.name}`
+                        : `Adicionar ${item.name} à sacola`
                     }
-                    className="w-9 h-9 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 flex items-center justify-center hover:bg-[var(--penha-gold)] hover:text-[var(--bg-dark)] text-[var(--penha-gold)] transition-all duration-300"
-                    aria-label={`Adicionar ${item.name} à sacola`}
                   >
                     <svg
                       width="16"
@@ -169,6 +192,15 @@ export default function Cardapio() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* Modal de Customização / Ponto da Carne e Complementos */}
+        {selectedItemForModal && (
+          <BurgerCustomizationModal
+            item={selectedItemForModal}
+            customizationData={menu.burgerCustomization}
+            onClose={() => setSelectedItemForModal(null)}
+          />
+        )}
 
         {/* CTA */}
         <motion.div

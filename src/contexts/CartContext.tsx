@@ -2,17 +2,28 @@
 
 import { createContext, useContext, useState, useCallback, ReactNode } from "react";
 
+export interface CartComplemento {
+  name: string;
+  quantity: number;
+  price: number;
+}
+
 export interface CartItem {
   id: string;
+  originalId?: string;
   name: string;
   price: number | null;
   quantity: number;
   image: string | null;
+  pontoCarne?: string;
+  complementos?: CartComplemento[];
+  paraViagem?: boolean;
+  observacoes?: string;
 }
 
 interface CartContextType {
   items: CartItem[];
-  addItem: (item: Omit<CartItem, "quantity">) => void;
+  addItem: (item: Omit<CartItem, "quantity"> & { quantity?: number }) => void;
   removeItem: (id: string) => void;
   updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
@@ -29,18 +40,22 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const addItem = useCallback((item: Omit<CartItem, "quantity">) => {
-    setItems((prev) => {
-      const existing = prev.find((i) => i.id === item.id);
-      if (existing) {
-        return prev.map((i) =>
-          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
-        );
-      }
-      return [...prev, { ...item, quantity: 1 }];
-    });
-    setIsDrawerOpen(true);
-  }, []);
+  const addItem = useCallback(
+    (item: Omit<CartItem, "quantity"> & { quantity?: number }) => {
+      const qtyToAdd = item.quantity && item.quantity > 0 ? item.quantity : 1;
+      setItems((prev) => {
+        const existing = prev.find((i) => i.id === item.id);
+        if (existing) {
+          return prev.map((i) =>
+            i.id === item.id ? { ...i, quantity: i.quantity + qtyToAdd } : i
+          );
+        }
+        return [...prev, { ...item, quantity: qtyToAdd }];
+      });
+      setIsDrawerOpen(true);
+    },
+    []
+  );
 
   const removeItem = useCallback((id: string) => {
     setItems((prev) => prev.filter((i) => i.id !== id));

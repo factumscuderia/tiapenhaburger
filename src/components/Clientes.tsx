@@ -6,33 +6,33 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    name: "Lucas M.",
-    text: "Melhor hambúrguer de BH, sem dúvidas! O smash cheddar é absurdo. Virei cliente fiel!",
+    name: "Pedro Henrique C.",
+    text: "Hambúrguer artesanal impecável! O blend Angus vem suculento e no ponto certo. A batata cheddar e bacon é absurda e lembra muito o carinho clássico da Tia Penha dos anos 80.",
     stars: 5,
   },
   {
-    name: "Mariana S.",
-    text: "Toda sexta-feira é Tia Penha aqui em casa. A família inteira ama! O atendimento é um carinho só.",
+    name: "Camila Duarte",
+    text: "Melhor hamburgueria de Santa Inês e da região leste! Pão super macio selado na manteiga e atendimento atencioso demais. Toda semana pedimos pelo delivery.",
     stars: 5,
   },
   {
-    name: "Pedro H.",
-    text: "Pedi pelo delivery e chegou quente, montado certinho. A batata cheddar e bacon é viciante demais!",
+    name: "Lucas Miranda",
+    text: "O Cheddar Bacon e o Duplo Bacon são sensacionais. O smash tem a crostinha caramelizada perfeita e queijo derretido no ponto. Chegou super rápido e quentinho!",
     stars: 5,
   },
   {
-    name: "Carolina R.",
-    text: "Hambúrguer com gosto de comida de casa. Ingredientes frescos e muito sabor. Recomendo o Tia Penha Especial!",
+    name: "Mariana Silveira",
+    text: "Ambiente acolhedor e comida feita com amor de verdade. As almofadinhas de queijo gouda de entrada e o Tia Penha Especial foram uma experiência incrível!",
     stars: 5,
   },
   {
-    name: "Rafael A.",
-    text: "Descobri a Tia Penha por indicação de amigo e não me arrependi. Preço justo e qualidade incomparável.",
+    name: "Rodrigo Tavares",
+    text: "Tradição de verdade em Belo Horizonte! Preço justo, porções generosas e sabor inigualável. O burger Sabará com queijo canastra é diferenciado demais.",
     stars: 5,
   },
   {
-    name: "Juliana F.",
-    text: "O croissant supreme é a melhor sobremesa que já comi num burger shop. Nota 1000!",
+    name: "Juliana Fernandes",
+    text: "O croissant supreme é a melhor sobremesa que já comi num burger shop. Perfeito pra fechar o pedido!",
     stars: 5,
   },
 ];

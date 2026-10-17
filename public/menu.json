@@ -6,144 +6,198 @@
       "icon": "🍔",
       "items": [
         {
-          "id": "smash-simples",
-          "name": "Smash Simples",
-          "description": "Pão, carne smash 90g, queijo, alface, tomate, cebola e molho especial da casa.",
-          "price": null,
-          "image": null,
-          "featured": false,
-          "placeholder": true
-        },
-        {
-          "id": "smash-duplo",
-          "name": "Smash Duplo",
-          "description": "Pão, 2x carne smash 90g, queijo, alface, tomate, cebola e molho especial da casa.",
-          "price": null,
-          "image": null,
+          "id": "34939343",
+          "name": "CHEDDAR BACON",
+          "description": "Clássico que nunca decepciona.\nBlend Angus 160g suculento, cheddar duplo derretido, bacon crocante, cebola caramelizada e maionese de bacon da casa.\nUm hambúrguer intenso, equilibrado e cheio de textura, sabor e crocância em cada mordida.",
+          "price": 42,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/04a2bf0b6d090f5ad558f5a534ecff69.png",
           "featured": true,
-          "placeholder": true
+          "isBurger": true
         },
         {
-          "id": "smash-bacon",
-          "name": "Smash Bacon",
-          "description": "Pão, carne smash 90g, queijo, bacon crocante, alface, tomate, cebola e molho especial.",
-          "price": null,
-          "image": null,
+          "id": "34939380",
+          "name": "DUPLO BACON",
+          "description": "Pra quem não faz meio termo.\nDois blends Angus de 160g cada, cheddar duplo derretido, bacon crocante e molho da casa.",
+          "price": 48,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/2fc0a13246cb73b9081d5060cc4f9775.png",
           "featured": true,
-          "placeholder": true
+          "isBurger": true
         },
         {
-          "id": "smash-duplo-bacon",
-          "name": "Smash Duplo Bacon",
-          "description": "Pão, 2x carne smash 90g, queijo, bacon crocante, alface, tomate, cebola e molho especial.",
-          "price": null,
-          "image": null,
+          "id": "34939355",
+          "name": "GORGONZOLA SPECIAL",
+          "description": "Intenso, crocante e fora do óbvio.\nBlend Angus 160g suculento, gorgonzola marcante, cebola crispy, farofa de bacon com mel e molho da casa.\nUm burger sofisticado, com contraste perfeito entre cremosidade, crocância e um toque agridoce.",
+          "price": 47,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/6fca673afb4f6cba8cae79d86b475b58.png",
           "featured": false,
-          "placeholder": true
+          "isBurger": true
         },
         {
-          "id": "smash-cheddar",
-          "name": "Smash Cheddar",
-          "description": "Pão, carne smash 90g, cheddar cremoso, bacon, cebola caramelizada e molho especial.",
-          "price": null,
-          "image": null,
+          "id": "34939373",
+          "name": "TIA PENHA",
+          "description": "O clássico feito do jeito certo.\nBlend Angus 160g suculento, queijo prato derretido, salada fresca, cebola roxa, picles e molho especial da casa.\nEquilíbrio perfeito de sabores, leve, marcante e irresistível do primeiro ao último mordida.",
+          "price": 44,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/d44d7a591b303e38ad1bef5b28d499d5.png",
           "featured": true,
-          "placeholder": true
+          "isBurger": true
         },
         {
-          "id": "smash-salada",
-          "name": "Smash Salada",
-          "description": "Pão, carne smash 90g, queijo, alface, tomate, cebola roxa e maionese verde.",
-          "price": null,
-          "image": null,
+          "id": "34939339",
+          "name": "TRUFADO",
+          "description": "Sofisticação que derrete na boca.\nBlend Angus 160g suculento, queijo prato duplo bem cremoso e molho trufado com cebola caramelizada.\nUm burger elegante, intenso e extremamente macio, cada mordida é pura experiência.",
+          "price": 52,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/848f36dee9c6694f4f00a96d1aff653a.png",
           "featured": false,
-          "placeholder": true
+          "isBurger": true
         },
         {
-          "id": "tia-penha-especial",
-          "name": "Tia Penha Especial",
-          "description": "O carro-chefe da casa! Receita exclusiva da Tia Penha com ingredientes selecionados.",
-          "price": null,
-          "image": null,
-          "featured": true,
-          "placeholder": true
-        },
-        {
-          "id": "x-tudo",
-          "name": "X-Tudo da Tia",
-          "description": "Pão, carne, presunto, queijo, ovo, bacon, alface, tomate, milho, batata palha e molho especial.",
-          "price": null,
-          "image": null,
+          "id": "34939347",
+          "name": "SABARA",
+          "description": "Minas em forma de burger.\nBlend Angus 160g suculento, queijo minas fresco, rúcula e geleia artesanal de jabuticaba.\nO equilíbrio perfeito entre doce, fresco e intenso, um sabor mineiro que surpreende na primeira mordida.",
+          "price": 46,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/b484eab37fd9de5545f712b80153cf35.png",
           "featured": false,
-          "placeholder": true
+          "isBurger": true
+        },
+        {
+          "id": "34939366",
+          "name": "CRISPY CHICKEN",
+          "description": "O frango que virou favorito.\nPeito de frango empanado super crocante, queijo prato derretido, salada fresca e molho da casa.\nLeve, suculento e com a crocância perfeita, impossível comer uma vez só.",
+          "price": 45,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/2653262dad786e5e1d090b72e38cdb39.png",
+          "featured": false,
+          "isBurger": true
+        },
+        {
+          "id": "39643231",
+          "name": "FUTURO BURGER",
+          "description": "Sabor de verdade, sem abrir mão do planeta.\nHambúrguer vegetariano suculento, queijo prato derretido, salada fresca e molho da casa.\nLeve, equilibrado e cheio de sabor.",
+          "price": 40,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/efc15d1ef41a46f8ba1426529e2b5830.png",
+          "featured": false,
+          "isBurger": true
+        },
+        {
+          "id": "34939394",
+          "name": "KIDS",
+          "description": "O favorito da criançada! Smash de 80g, queijo prato derretido e molho da casa. Pequeno no tamanho, enorme no sabor. Perfeito para os pequenos apreciadores de hambúrguer.",
+          "price": 35,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/77afb72bd53b3e4a80373d14a32ae753.png",
+          "featured": false,
+          "isBurger": true
         }
       ]
     },
     {
       "id": "entradas",
-      "name": "Entradas",
+      "name": "Entradas & Porções",
       "icon": "🍟",
       "items": [
         {
-          "id": "batata-frita",
-          "name": "Batata Frita",
-          "description": "Porção generosa de batata frita crocante com sal e temperos da casa.",
-          "price": null,
-          "image": null,
-          "featured": true,
-          "placeholder": true
-        },
-        {
-          "id": "batata-cheddar-bacon",
-          "name": "Batata Cheddar e Bacon",
-          "description": "Batata frita coberta com cheddar cremoso e bacon crocante.",
-          "price": null,
-          "image": null,
-          "featured": true,
-          "placeholder": true
-        },
-        {
-          "id": "onion-rings",
-          "name": "Onion Rings",
-          "description": "Anéis de cebola empanados e fritos até ficarem dourados e crocantes.",
-          "price": null,
+          "id": "39832028",
+          "name": "Almofadinha de Queijo Gouda",
+          "description": "Palitos de queijo canastra empanados\n",
+          "price": 29,
           "image": null,
           "featured": false,
-          "placeholder": true
+          "isBurger": false
         },
         {
-          "id": "nuggets",
-          "name": "Nuggets",
-          "description": "Porção de nuggets de frango crocantes com molho à escolha.",
-          "price": null,
+          "id": "39832022",
+          "name": "Anel de Cebola",
+          "description": "Palitos de queijo canastra empanados\n",
+          "price": 25,
           "image": null,
           "featured": false,
-          "placeholder": true
+          "isBurger": false
+        },
+        {
+          "id": "34939419",
+          "name": "COXINHA TIA PENHA",
+          "description": "A famosa coxinha da casa",
+          "price": 33,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "34939422",
+          "name": "STICK DE QUEIJO CANASTRA",
+          "description": "Palitos de queijo canastra empanados\n",
+          "price": 29,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "34939425",
+          "name": "BATATA FRITA 400G",
+          "description": "Porção generosa de batata frita\n",
+          "price": 39,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "34939428",
+          "name": "BATATA CHEDDAR & BACON",
+          "description": "Batata frita com cheddar e bacon\n",
+          "price": 49,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "34939431",
+          "name": "BATATA COM PASTRAMI",
+          "description": "Batata frita com pastrami",
+          "price": 55,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "38137424",
+          "name": "DADINHO DE TAPIOCA",
+          "description": "A famosa coxinha da casa",
+          "price": 29,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "38137455",
+          "name": "PASTEL",
+          "description": "A famosa coxinha da casa",
+          "price": 29,
+          "image": null,
+          "featured": false,
+          "isBurger": false
         }
       ]
     },
     {
       "id": "sobremesas",
       "name": "Sobremesas",
-      "icon": "🍫",
+      "icon": "🥐",
       "items": [
         {
-          "id": "brownie",
-          "name": "Brownie",
-          "description": "Brownie artesanal de chocolate meio amargo, quentinho e macio por dentro.",
-          "price": null,
+          "id": "croissant-supreme",
+          "name": "CROISSANT SUPREME",
+          "description": "Croissant folhado super crocante recheado com creme especial, picolé artesanal e cobertura generosa de Nutella pura.",
+          "price": 32,
           "image": null,
           "featured": true,
-          "placeholder": true
+          "isBurger": false
         },
         {
-          "id": "brownie-sorvete",
-          "name": "Brownie com Sorvete",
-          "description": "Brownie artesanal acompanhado de uma bola de sorvete de creme.",
-          "price": null,
+          "id": "fonduta-especial",
+          "name": "FONDUTA DE CHOCOLATE",
+          "description": "Fonduta cremosa servida com frutas e acompanhamentos selecionados da Tia Penha.",
+          "price": 28,
           "image": null,
-          "featured": true,
-          "placeholder": true
+          "featured": false,
+          "isBurger": false
         }
       ]
     },
@@ -153,34 +207,375 @@
       "icon": "🥤",
       "items": [
         {
-          "id": "refrigerante-lata",
-          "name": "Refrigerante Lata",
-          "description": "Coca-Cola, Guaraná, Sprite ou Fanta — lata 350ml.",
-          "price": null,
+          "id": "39643211",
+          "name": "ÁGUA 500ml",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 5,
           "image": null,
           "featured": false,
-          "placeholder": true
+          "isBurger": false
         },
         {
-          "id": "suco-natural",
-          "name": "Suco Natural",
-          "description": "Suco natural da fruta. Consulte os sabores disponíveis.",
-          "price": null,
+          "id": "39643215",
+          "name": "REFRIGERANTE LATA",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 8,
+          "image": "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/24c0888f9020e10acdf3ab635f3b53fb.png",
+          "featured": false,
+          "isBurger": false
+        }
+      ]
+    },
+    {
+      "id": "drinks-sem-alcool",
+      "name": "Sodas & Drinks Sem Álcool",
+      "icon": "🧃",
+      "items": [
+        {
+          "id": "35064459",
+          "name": "SODA ARTESANAL",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 12.9,
           "image": null,
           "featured": false,
-          "placeholder": true
+          "isBurger": false
         },
         {
-          "id": "agua",
-          "name": "Água Mineral",
-          "description": "Água mineral sem gás 500ml.",
-          "price": null,
+          "id": "35064462",
+          "name": "LEMONADE",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 12.9,
           "image": null,
           "featured": false,
-          "placeholder": true
+          "isBurger": false
+        },
+        {
+          "id": "35064465",
+          "name": "SODA RED MINT",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 14.9,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35064478",
+          "name": "SODA TROPICAL",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 14.9,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35064484",
+          "name": "REFIL A VONTADE LEMONADE",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 19.9,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35351451",
+          "name": "REFIL A VONTADE SABORES",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 0,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks Especiais",
+      "icon": "🍹",
+      "items": [
+        {
+          "id": "38518420",
+          "name": "DOSE CACHAÇA",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 8,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "38877697",
+          "name": "DOSE JACK",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 30,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "38877707",
+          "name": "DOSE GIN",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 20,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35064536",
+          "name": "GORDONS TROPICAL",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 25,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35064539",
+          "name": "APEROL TROPICAL",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 29.9,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35064555",
+          "name": "HUGO SPRITZ",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 29,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35064567",
+          "name": "CAIPVODKA",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 25,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35064576",
+          "name": "CAIPI SAGATIBA",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 20,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35065501",
+          "name": "COMBO",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 300,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        }
+      ]
+    },
+    {
+      "id": "acrescimos",
+      "name": "Acréscimos a Parte",
+      "icon": "🧀",
+      "items": [
+        {
+          "id": "35597950",
+          "name": "ACRES. PICLES",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 4,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35123775",
+          "name": "ACRES. MAIONESE A PARTE",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 4,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35123337",
+          "name": "ACRES. HAMBURGUER",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 16,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35123349",
+          "name": "ACRES. QUEIJO",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 4,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35123358",
+          "name": "ACRES. BACON",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 8,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35123378",
+          "name": "ACRES. CEBOLA CARAMELIZADA",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 4,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35123391",
+          "name": "ACRES. COGUMELO ",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 5,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35123409",
+          "name": "ACRES. OVO",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 4,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "35351341",
+          "name": "ACRES. GELEIA DE JAB A PARTE ",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 8,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "38300794",
+          "name": "ACRES. MAIONESE BACON",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 4,
+          "image": null,
+          "featured": false,
+          "isBurger": false
+        },
+        {
+          "id": "38300782",
+          "name": "ACRES. MAIONESE TRUFADA",
+          "description": "Preparado com ingredientes selecionados e o toque especial da casa.",
+          "price": 8,
+          "image": null,
+          "featured": false,
+          "isBurger": false
         }
       ]
     }
   ],
-  "_nota": "ATENÇÃO: Todos os preços estão como null (placeholder). Substituir pelos preços reais do cardápio. As imagens também devem ser substituídas pelos caminhos das fotos reais dos produtos."
+  "burgerCustomization": {
+    "pontoCarne": {
+      "title": "PONTO DA CARNE",
+      "subtitle": "Escolha pelo menos 1 opção",
+      "required": true,
+      "options": [
+        {
+          "id": "ao-ponto",
+          "name": "AO PONTO",
+          "price": 0
+        },
+        {
+          "id": "mal-passado",
+          "name": "MAL PASSADO",
+          "price": 0
+        },
+        {
+          "id": "bem-passado",
+          "name": "BEM PASSADO",
+          "price": 0
+        }
+      ]
+    },
+    "complementos": {
+      "title": "COMPLEMENTOS (OPCIONAIS):",
+      "subtitle": "Escolha até 5 opções",
+      "maxChoices": 5,
+      "options": [
+        {
+          "id": "hamburguer-extra",
+          "name": "HAMBÚRGUER EXTRA",
+          "price": 16
+        },
+        {
+          "id": "queijo",
+          "name": "QUEIJO",
+          "price": 4
+        },
+        {
+          "id": "bacon",
+          "name": "BACON",
+          "price": 8
+        },
+        {
+          "id": "cebola",
+          "name": "CEBOLA",
+          "price": 4
+        },
+        {
+          "id": "cogumelo",
+          "name": "COGUMELO",
+          "price": 5
+        },
+        {
+          "id": "ovo",
+          "name": "OVO",
+          "price": 4
+        },
+        {
+          "id": "picles",
+          "name": "PICLES",
+          "price": 4
+        },
+        {
+          "id": "geleia-jab",
+          "name": "GELEIA JAB",
+          "price": 8
+        },
+        {
+          "id": "salada",
+          "name": "SALADA (ALFACE E TOMATE)",
+          "price": 4
+        },
+        {
+          "id": "cebola-caramelizada",
+          "name": "CEBOLA CARAMELIZADA",
+          "price": 4
+        },
+        {
+          "id": "maionese-bacon",
+          "name": "MAIONESE DE BACON",
+          "price": 4
+        }
+      ]
+    },
+    "viagem": {
+      "title": "VIAGEM",
+      "options": [
+        {
+          "id": "para-viagem",
+          "name": "PARA VIAGEM",
+          "price": 0
+        }
+      ]
+    }
+  }
 }

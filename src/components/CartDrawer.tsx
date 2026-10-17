@@ -24,7 +24,29 @@ export default function CartDrawer() {
       const priceStr = item.price
         ? ` — R$ ${(item.price * item.quantity).toFixed(2).replace(".", ",")}`
         : "";
-      msg += `• ${item.quantity}x ${item.name}${priceStr}\n`;
+      msg += `• ${item.quantity}x *${item.name}*${priceStr}\n`;
+      if (item.pontoCarne) {
+        msg += `   └ Ponto: ${item.pontoCarne}\n`;
+      }
+      if (item.complementos && item.complementos.length > 0) {
+        const compStr = item.complementos
+          .map(
+            (c) =>
+              `${c.quantity}x ${c.name}${
+                c.price > 0
+                  ? ` (+R$ ${(c.price * c.quantity).toFixed(2).replace(".", ",")})`
+                  : ""
+              }`
+          )
+          .join(", ");
+        msg += `   └ Complementos: ${compStr}\n`;
+      }
+      if (item.paraViagem) {
+        msg += `   └ 📦 Para viagem\n`;
+      }
+      if (item.observacoes) {
+        msg += `   └ 📝 Obs: ${item.observacoes}\n`;
+      }
     });
     if (subtotal > 0) {
       msg += `\n💰 *Total: R$ ${subtotal.toFixed(2).replace(".", ",")}*`;
@@ -128,9 +150,17 @@ export default function CartDrawer() {
                       exit={{ opacity: 0, x: -20 }}
                       className="glass-card p-4 flex gap-4"
                     >
-                      {/* Ícone do item */}
-                      <div className="w-14 h-14 rounded-xl bg-[var(--bg-card)] flex items-center justify-center flex-shrink-0 text-2xl">
-                        🍔
+                      {/* Ícone ou imagem do item */}
+                      <div className="w-14 h-14 rounded-xl bg-[var(--bg-card)] flex items-center justify-center flex-shrink-0 text-2xl overflow-hidden border border-[var(--penha-cream)]/10">
+                        {item.image ? (
+                          <img
+                            src={item.image}
+                            alt={item.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          "🍔"
+                        )}
                       </div>
 
                       {/* Info */}
@@ -145,6 +175,45 @@ export default function CartDrawer() {
                                 .replace(".", ",")}`
                             : "Consultar"}
                         </span>
+
+                        {/* Ponto da carne */}
+                        {item.pontoCarne && (
+                          <div className="text-[11px] text-[var(--penha-gold)] font-medium mt-1 flex items-center gap-1">
+                            <span>🥩</span>
+                            <span>Ponto: {item.pontoCarne}</span>
+                          </div>
+                        )}
+
+                        {/* Complementos */}
+                        {item.complementos && item.complementos.length > 0 && (
+                          <div className="text-[11px] text-[var(--penha-cream)]/75 mt-1 space-y-0.5 bg-white/5 rounded p-1.5 border border-white/5">
+                            {item.complementos.map((c, idx) => (
+                              <div key={idx} className="flex justify-between">
+                                <span>+ {c.quantity}x {c.name}</span>
+                                {c.price > 0 && (
+                                  <span className="text-[var(--penha-gold)] font-medium">
+                                    +R$ {(c.price * c.quantity).toFixed(2).replace(".", ",")}
+                                  </span>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+
+                        {/* Para viagem */}
+                        {item.paraViagem && (
+                          <div className="text-[11px] text-amber-300 font-medium mt-1 flex items-center gap-1">
+                            <span>📦</span>
+                            <span>Para viagem</span>
+                          </div>
+                        )}
+
+                        {/* Observações */}
+                        {item.observacoes && (
+                          <div className="text-[11px] text-[var(--penha-cream)]/60 italic mt-1 bg-black/20 p-1 rounded">
+                            Obs: &ldquo;{item.observacoes}&rdquo;
+                          </div>
+                        )}
 
                         {/* Controles de quantidade */}
                         <div className="flex items-center gap-3 mt-2">
