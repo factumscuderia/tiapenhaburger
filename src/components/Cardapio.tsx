@@ -68,47 +68,51 @@ export default function Cardapio() {
         </div>
 
         {/* Abas de categoria */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex justify-center gap-2 md:gap-4 mb-12 flex-wrap"
-        >
+        <div className="flex justify-center gap-2 md:gap-3 mb-10 flex-wrap px-2">
           {menu.categories.map((cat, i) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(i)}
-              className={`px-5 py-2.5 rounded-full font-body text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
+              className={`px-5 py-2.5 rounded-full font-body text-xs sm:text-sm font-semibold transition-all duration-300 flex items-center gap-2 cursor-pointer ${
                 activeCategory === i
-                  ? "bg-[var(--penha-gold)] text-[var(--bg-dark)] shadow-lg shadow-[var(--penha-gold)]/20"
-                  : "bg-[var(--bg-card)] text-[var(--penha-cream)]/70 hover:bg-[var(--penha-cream)]/10 border border-[var(--penha-cream)]/10"
+                  ? "bg-[var(--penha-gold)] text-[var(--bg-dark)] shadow-lg shadow-[var(--penha-gold)]/25 scale-105"
+                  : "bg-[var(--bg-card)] text-[var(--penha-cream)]/75 hover:bg-[var(--penha-cream)]/10 hover:text-[var(--penha-cream)] border border-[var(--penha-cream)]/10"
               }`}
             >
-              <span>{cat.icon}</span>
-              {cat.name}
+              <span className="text-base">{cat.icon}</span>
+              <span>{cat.name}</span>
+              <span
+                className={`text-[10px] px-2 py-0.5 rounded-full font-mono font-bold ${
+                  activeCategory === i
+                    ? "bg-[var(--bg-dark)]/20 text-[var(--bg-dark)]"
+                    : "bg-white/10 text-[var(--penha-cream)]/60"
+                }`}
+              >
+                {cat.items.length}
+              </span>
             </button>
           ))}
-        </motion.div>
+        </div>
 
         {/* Grid de itens */}
         <motion.div
           key={currentCategory.id}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.35 }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
         >
           {currentCategory.items.map((item, i) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.07 }}
-              className="glass-card group hover:border-[var(--penha-gold)]/20 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
+              transition={{ duration: 0.35, delay: Math.min(i * 0.05, 0.4) }}
+              className="glass-card group hover:border-[var(--penha-gold)]/30 hover:shadow-xl hover:shadow-[var(--penha-gold)]/5 transition-all duration-300 flex flex-col overflow-hidden cursor-pointer"
               onClick={() => setSelectedItemForModal(item)}
             >
-              {/* Imagem / Placeholder */}
-              <div className="relative h-44 overflow-hidden bg-[var(--bg-card)]">
+              {/* Imagem / Espaço reservado para a foto */}
+              <div className="relative h-44 overflow-hidden bg-[#180f10]">
                 {item.image ? (
                   <img
                     src={item.image}
@@ -116,14 +120,19 @@ export default function Cardapio() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 ) : (
-                  <div className="w-full h-full img-placeholder flex flex-col items-center justify-center gap-2 text-3xl">
-                    {currentCategory.icon}
-                    <span className="text-[10px] text-[var(--penha-cream)]/20">
-                      foto em breve
+                  <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center border-b border-dashed border-[var(--penha-gold)]/20 bg-gradient-to-b from-[#231416] to-[#160d0e]">
+                    <div className="w-12 h-12 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/25 flex items-center justify-center text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                      {currentCategory.icon}
+                    </div>
+                    <span className="text-[11px] font-slab uppercase tracking-wider text-[var(--penha-cream)]/75">
+                      {item.name}
+                    </span>
+                    <span className="text-[10px] text-[var(--penha-gold)]/70 mt-0.5">
+                      Espaço reservado para foto
                     </span>
                   </div>
                 )}
-                <div className="absolute top-3 left-3 flex flex-col gap-1">
+                <div className="absolute top-3 left-3 flex flex-col gap-1 z-10">
                   {item.featured && (
                     <span className="px-2.5 py-1 bg-[var(--penha-gold)] text-[var(--bg-dark)] text-[10px] font-bold uppercase rounded-full tracking-wider shadow-md">
                       Destaque
@@ -142,11 +151,11 @@ export default function Cardapio() {
                 <h3 className="font-slab text-[var(--penha-cream)] text-base font-bold mb-2 group-hover:text-[var(--penha-gold)] transition-colors">
                   {item.name}
                 </h3>
-                <p className="font-body text-[var(--penha-cream)]/50 text-xs leading-relaxed mb-4 flex-1 line-clamp-3">
+                <p className="font-body text-[var(--penha-cream)]/60 text-xs leading-relaxed mb-4 flex-1 line-clamp-3">
                   {item.description}
                 </p>
 
-                <div className="flex items-center justify-between mt-auto pt-2 border-t border-white/5">
+                <div className="flex items-center justify-between mt-auto pt-3 border-t border-white/5">
                   <span className="font-slab text-[var(--penha-gold)] text-lg font-bold">
                     {item.price
                       ? `R$ ${item.price.toFixed(2).replace(".", ",")}`
@@ -166,7 +175,7 @@ export default function Cardapio() {
                         });
                       }
                     }}
-                    className="w-9 h-9 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 flex items-center justify-center hover:bg-[var(--penha-gold)] hover:text-[var(--bg-dark)] text-[var(--penha-gold)] transition-all duration-300 shadow-sm"
+                    className="w-9 h-9 rounded-full bg-[var(--penha-gold)]/15 border border-[var(--penha-gold)]/40 flex items-center justify-center hover:bg-[var(--penha-gold)] hover:text-[var(--bg-dark)] text-[var(--penha-gold)] transition-all duration-300 shadow-sm cursor-pointer"
                     aria-label={
                       item.isBurger
                         ? `Personalizar ${item.name}`
@@ -203,12 +212,7 @@ export default function Cardapio() {
         )}
 
         {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-center mt-12"
-        >
+        <div className="text-center mt-12">
           <a
             href={LINKS.delivery}
             target="_blank"
@@ -231,7 +235,7 @@ export default function Cardapio() {
               <line x1="10" y1="14" x2="21" y2="3" />
             </svg>
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

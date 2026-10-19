@@ -193,11 +193,11 @@ export default function BurgerCustomizationModal({
           {/* Header da Barra Superior */}
           <div className="flex items-center justify-between p-4 px-5 border-b border-white/10 bg-[#1a1715]/80 backdrop-blur z-20">
             <span className="text-xs font-semibold tracking-wider uppercase text-[var(--penha-gold)]">
-              Personalizar Pedido
+              {item.isBurger ? "Personalizar Hambúrguer" : "Adicionar ao Pedido"}
             </span>
             <button
               onClick={onClose}
-              className="w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-[#f4efe6]/70 hover:text-[#f4efe6] transition-colors"
+              className="w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-[#f4efe6]/70 hover:text-[#f4efe6] transition-colors cursor-pointer"
               aria-label="Fechar"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -211,7 +211,7 @@ export default function BurgerCustomizationModal({
           <div className="flex-1 overflow-y-auto divide-y divide-white/10 overscroll-contain">
             {/* Foto e Informações do Produto */}
             <div className="p-5 flex flex-col sm:flex-row gap-4 items-start bg-[#161413]">
-              {item.image && (
+              {item.image ? (
                 <div className="w-full sm:w-28 h-32 sm:h-28 rounded-2xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/10">
                   <img
                     src={item.image}
@@ -219,12 +219,23 @@ export default function BurgerCustomizationModal({
                     className="w-full h-full object-cover"
                   />
                 </div>
+              ) : (
+                <div className="w-full sm:w-28 h-28 rounded-2xl bg-black/40 flex-shrink-0 border border-dashed border-[var(--penha-gold)]/30 flex flex-col items-center justify-center text-center p-2">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--penha-gold)" strokeWidth="1.5" className="opacity-70 mb-1">
+                    <rect x="3" y="3" width="18" height="18" rx="4" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <path d="M21 15l-5-5L5 21" />
+                  </svg>
+                  <span className="text-[9px] text-[var(--penha-gold)]/80 font-mono">
+                    Foto em breve
+                  </span>
+                </div>
               )}
               <div className="flex-1 min-w-0">
                 <h3 className="font-slab text-xl font-bold text-[var(--penha-cream)] uppercase tracking-wide">
                   {item.name}
                 </h3>
-                <p className="font-body text-xs text-[var(--penha-cream)]/65 leading-relaxed mt-1.5 line-clamp-3">
+                <p className="font-body text-xs text-[var(--penha-cream)]/65 leading-relaxed mt-1.5">
                   {item.description}
                 </p>
                 <div className="font-slab text-[var(--penha-gold)] font-bold text-lg mt-2">
