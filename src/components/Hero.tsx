@@ -6,36 +6,58 @@ import { LINKS, MARQUEE_TEXT } from "@/lib/config";
 
 const heroBurgers = [
   {
-    id: "smash-duplo",
-    title: "SMASH DUPLO",
-    tagline: "DOIS BLENDS NA CHAPA COM MUITO QUEIJO DERRETIDO",
+    id: "tia-penha",
+    title: "TIA PENHA",
+    tagline: "O CLÁSSICO DA CASA FEITO DO JEITO CERTO",
     description:
-      "Pão artesanal tostado na manteiga, 2x carne smash 90g prensada com crostinha crocante, queijo especial derretido no ponto, alface, tomate fresco e molho da casa.",
-    image: "", // Base pronta: o usuário enviará as imagens depois
+      "Blend Angus 160g suculento, queijo prato derretido, salada fresca, cebola roxa, picles e molho especial da casa no pão brioche selado.",
+    image:
+      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/d44d7a591b303e38ad1bef5b28d499d5.png",
   },
   {
-    id: "smash-bacon",
-    title: "SMASH BACON",
-    tagline: "BLEND ARTESANAL COM TIRAS CROCANTES DE BACON",
+    id: "cheddar-bacon",
+    title: "CHEDDAR BACON",
+    tagline: "BLEND ANGUS COM CHEDDAR DUPLO E BACON CROCANTE",
     description:
-      "Pão fresco selado na manteiga, carne smash 90g suculenta, queijo derretido, fatias generosas de bacon crocante, alface, tomate e molho especial.",
-    image: "",
+      "Blend Angus 160g suculento, cheddar duplo derretido, bacon crocante, cebola caramelizada e maionese de bacon da casa no pão brioche selado.",
+    image:
+      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/04a2bf0b6d090f5ad558f5a534ecff69.png",
   },
   {
-    id: "smash-cheddar",
-    title: "SMASH CHEDDAR",
-    tagline: "CHEDDAR CREMOSO E CEBOLA CARAMELIZADA",
+    id: "duplo-bacon",
+    title: "DUPLO BACON",
+    tagline: "DOIS BLENDS ANGUS 160G COM MUITO BACON",
     description:
-      "Pão de brioche artesanal, blend smash 90g, queijo cheddar cremoso e generoso derretido na chapa, bacon e cebola caramelizada caseira.",
-    image: "",
+      "Pra quem não faz meio termo. Dois blends Angus de 160g cada, cheddar duplo derretido, bacon crocante e molho especial da casa.",
+    image:
+      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/2fc0a13246cb73b9081d5060cc4f9775.png",
   },
   {
-    id: "smash-salada",
-    title: "SMASH SALADA",
-    tagline: "FRESCO, EQUILIBRADO E COM MAIONESE VERDE",
+    id: "gorgonzola-special",
+    title: "GORGONZOLA SPECIAL",
+    tagline: "INTENSO, CROCANTE E FORA DO ÓBVIO",
     description:
-      "Pão macio selado, carne smash 90g artesanal, queijo derretido, folhas frescas de alface americana, rodelas de tomate, cebola roxa e maionese verde da Tia.",
-    image: "",
+      "Blend Angus 160g suculento, gorgonzola marcante, cebola crispy, farofa de bacon com mel e molho da casa.",
+    image:
+      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/6fca673afb4f6cba8cae79d86b475b58.png",
+  },
+  {
+    id: "trufado",
+    title: "TRUFADO",
+    tagline: "SOFISTICAÇÃO QUE DERRETE NA BOCA",
+    description:
+      "Blend Angus 160g suculento, queijo prato duplo bem cremoso e molho trufado especial com cebola caramelizada.",
+    image:
+      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/848f36dee9c6694f4f00a96d1aff653a.png",
+  },
+  {
+    id: "sabara",
+    title: "SABARÁ",
+    tagline: "MINAS EM FORMA DE BURGER COM GELEIA DE JABUTICABA",
+    description:
+      "Blend Angus 160g suculento, queijo minas fresco, rúcula e geleia artesanal de jabuticaba de Sabará.",
+    image:
+      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/b484eab37fd9de5545f712b80153cf35.png",
   },
 ];
 
