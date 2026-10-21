@@ -11,8 +11,7 @@ const heroBurgers = [
     tagline: "O CLÁSSICO DA CASA FEITO DO JEITO CERTO",
     description:
       "Blend Angus 160g suculento, queijo prato derretido, salada fresca, cebola roxa, picles e molho especial da casa no pão brioche selado.",
-    image:
-      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/d44d7a591b303e38ad1bef5b28d499d5.png",
+    image: "/images/burgers/tia-penha.png",
   },
   {
     id: "cheddar-bacon",
@@ -20,8 +19,7 @@ const heroBurgers = [
     tagline: "BLEND ANGUS COM CHEDDAR DUPLO E BACON CROCANTE",
     description:
       "Blend Angus 160g suculento, cheddar duplo derretido, bacon crocante, cebola caramelizada e maionese de bacon da casa no pão brioche selado.",
-    image:
-      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/04a2bf0b6d090f5ad558f5a534ecff69.png",
+    image: "/images/burgers/cheddar-bacon.png",
   },
   {
     id: "duplo-bacon",
@@ -29,8 +27,7 @@ const heroBurgers = [
     tagline: "DOIS BLENDS ANGUS 160G COM MUITO BACON",
     description:
       "Pra quem não faz meio termo. Dois blends Angus de 160g cada, cheddar duplo derretido, bacon crocante e molho especial da casa.",
-    image:
-      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/2fc0a13246cb73b9081d5060cc4f9775.png",
+    image: "/images/burgers/duplo-bacon.png",
   },
   {
     id: "gorgonzola-special",
@@ -38,8 +35,7 @@ const heroBurgers = [
     tagline: "INTENSO, CROCANTE E FORA DO ÓBVIO",
     description:
       "Blend Angus 160g suculento, gorgonzola marcante, cebola crispy, farofa de bacon com mel e molho da casa.",
-    image:
-      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/6fca673afb4f6cba8cae79d86b475b58.png",
+    image: "/images/burgers/gorgonzola-special.png",
   },
   {
     id: "trufado",
@@ -47,8 +43,7 @@ const heroBurgers = [
     tagline: "SOFISTICAÇÃO QUE DERRETE NA BOCA",
     description:
       "Blend Angus 160g suculento, queijo prato duplo bem cremoso e molho trufado especial com cebola caramelizada.",
-    image:
-      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/848f36dee9c6694f4f00a96d1aff653a.png",
+    image: "/images/burgers/trufado.png",
   },
   {
     id: "sabara",
@@ -56,8 +51,7 @@ const heroBurgers = [
     tagline: "MINAS EM FORMA DE BURGER COM GELEIA DE JABUTICABA",
     description:
       "Blend Angus 160g suculento, queijo minas fresco, rúcula e geleia artesanal de jabuticaba de Sabará.",
-    image:
-      "https://static.saipos.com/saipos-estatico/img-items/87707/store_item/b484eab37fd9de5545f712b80153cf35.png",
+    image: "/images/burgers/sabara.png",
   },
 ];
 
@@ -173,30 +167,29 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* COLUNA CENTRAL: Base de Madeira e Espaço Reservado para o Hambúrguer (Como na Referência) */}
+          {/* COLUNA CENTRAL: Base de Madeira e Hambúrguer perfeitamente encaixado */}
           <div className="lg:col-span-5 flex flex-col items-center justify-center relative min-h-[380px] sm:min-h-[440px] lg:min-h-[500px]">
             
-            {/* Espaço em Branco reservado para fotos futuras dos hambúrgueres */}
-            <div className="relative w-full max-w-md aspect-square flex flex-col items-center justify-end pb-8">
+            {/* Container do Hambúrguer e Tábua */}
+            <div className="relative w-full max-w-md aspect-square flex flex-col items-center justify-end pb-4">
               
-              {/* Slot do Hambúrguer que alternará com as fotos enviadas */}
+              {/* Slot do Hambúrguer */}
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentBurger.id}
-                  initial={{ opacity: 0, scale: 0.9, y: 15 }}
+                  initial={{ opacity: 0, scale: 0.92, y: 15 }}
                   animate={{ opacity: 1, scale: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.9, y: -15 }}
-                  transition={{ duration: 0.45 }}
-                  className="w-full flex-1 flex flex-col items-center justify-center relative z-20"
+                  exit={{ opacity: 0, scale: 0.92, y: -15 }}
+                  transition={{ duration: 0.4 }}
+                  className="w-full flex-1 flex flex-col items-center justify-end relative z-20"
                 >
                   {currentBurger.image ? (
                     <img
                       src={currentBurger.image}
                       alt={currentBurger.title}
-                      className="w-full h-full object-contain filter drop-shadow-[0_25px_30px_rgba(0,0,0,0.8)]"
+                      className="w-full max-w-[350px] sm:max-w-[410px] md:max-w-[440px] max-h-[340px] sm:max-h-[380px] object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.85)] translate-y-9 sm:translate-y-11 md:translate-y-12 select-none pointer-events-none"
                     />
                   ) : (
-                    /* Espaço em branco limpo preparado para a imagem */
                     <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 border-dashed border-[var(--penha-gold)]/25 flex flex-col items-center justify-center p-6 text-center bg-black/15 backdrop-blur-[2px]">
                       <div className="w-16 h-16 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 flex items-center justify-center mb-3">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--penha-gold)" strokeWidth="1.5">
@@ -208,21 +201,20 @@ export default function Hero() {
                       <span className="font-display text-sm uppercase tracking-wider text-[var(--penha-cream)]">
                         {currentBurger.title}
                       </span>
-                      <span className="text-[11px] font-slab text-[var(--penha-gold)]/80 mt-1">
-                        Espaço reservado para a foto do hambúrguer
-                      </span>
                     </div>
                   )}
                 </motion.div>
               </AnimatePresence>
 
-              {/* Base de Madeira Rústica / Tábua Redonda (Igual à Referência) */}
-              <div className="relative w-72 sm:w-88 md:w-96 h-14 -mt-6 z-10">
-                {/* Sombra da tábua */}
-                <div className="absolute inset-x-4 bottom-0 h-6 bg-black/90 rounded-full blur-md" />
+              {/* Base de Madeira Rústica / Tábua Redonda / Prato */}
+              <div className="relative w-80 sm:w-96 md:w-[420px] h-16 -mt-3 z-10 pointer-events-none">
+                {/* Sombra de contato do hambúrguer diretamente sobre a tábua */}
+                <div className="absolute inset-x-12 top-1 h-6 bg-black/95 rounded-full blur-[7px]" />
+                {/* Sombra projetada no fundo */}
+                <div className="absolute inset-x-6 bottom-0 h-6 bg-black/95 rounded-full blur-md" />
                 
                 {/* Tábua de madeira redonda */}
-                <div className="relative w-full h-10 rounded-[100%] bg-gradient-to-b from-[#3a2215] via-[#24130a] to-[#120803] border-t-2 border-[#6d4128]/60 shadow-[0_15px_30px_rgba(0,0,0,0.9)] flex items-center justify-center">
+                <div className="relative w-full h-11 rounded-[100%] bg-gradient-to-b from-[#3a2215] via-[#24130a] to-[#120803] border-t-2 border-[#6d4128]/70 shadow-[0_15px_30px_rgba(0,0,0,0.95)] flex items-center justify-center">
                   <div className="w-[94%] h-[80%] rounded-[100%] border border-[#7a482b]/30 bg-gradient-to-r from-transparent via-[#452718]/40 to-transparent" />
                 </div>
               </div>
@@ -257,7 +249,7 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Miniatura do Próximo Hambúrguer (Como no Preview da Imagem 3) */}
+            {/* Miniatura do Próximo Hambúrguer */}
             <div
               onClick={goToNext}
               className="group cursor-pointer rounded-2xl bg-black/50 hover:bg-black/80 border border-white/10 hover:border-[var(--penha-gold)]/50 p-3.5 transition-all duration-300 w-44 sm:w-48 shadow-xl"
@@ -272,12 +264,12 @@ export default function Hero() {
               </div>
 
               {/* Slot da miniatura */}
-              <div className="w-full h-16 rounded-lg bg-white/[0.03] border border-dashed border-white/10 flex items-center justify-center mb-2 overflow-hidden">
+              <div className="w-full h-16 rounded-lg bg-black/40 border border-white/10 group-hover:border-[var(--penha-gold)]/30 flex items-center justify-center mb-2 overflow-hidden p-1">
                 {nextBurger.image ? (
                   <img
                     src={nextBurger.image}
                     alt={nextBurger.title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.7)] group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
                   <span className="text-[10px] text-[var(--penha-cream)]/40 font-mono">
