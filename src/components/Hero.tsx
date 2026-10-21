@@ -94,7 +94,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           {/* COLUNA ESQUERDA: Nome do Hambúrguer, Descrição e Botão Peça Já */}
-          <div className="lg:col-span-4 flex flex-col justify-center text-center lg:text-left z-20">
+          <div className="lg:col-span-5 flex flex-col justify-center text-center lg:text-left z-20">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={currentBurger.id}
@@ -167,13 +167,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* COLUNA CENTRAL: Base de Madeira e Hambúrguer perfeitamente encaixado */}
-          <div className="lg:col-span-5 flex flex-col items-center justify-center relative min-h-[380px] sm:min-h-[440px] lg:min-h-[500px]">
+          {/* COLUNA CENTRAL: Hambúrguer em Destaque Gigante sobre a Tábua de Madeira */}
+          <div className="lg:col-span-6 flex flex-col items-center justify-center relative min-h-[440px] sm:min-h-[500px] lg:min-h-[560px]">
             
-            {/* Container do Hambúrguer e Tábua */}
-            <div className="relative w-full max-w-md aspect-square flex flex-col items-center justify-end pb-4">
+            {/* Container do Hambúrguer e Tábua Ampliados */}
+            <div className="relative w-full max-w-lg sm:max-w-xl md:max-w-2xl flex flex-col items-center justify-end pb-4">
               
-              {/* Slot do Hambúrguer */}
+              {/* Slot do Hambúrguer com Tamanho Aumentado */}
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentBurger.id}
@@ -187,18 +187,18 @@ export default function Hero() {
                     <img
                       src={currentBurger.image}
                       alt={currentBurger.title}
-                      className="w-full max-w-[350px] sm:max-w-[410px] md:max-w-[440px] max-h-[340px] sm:max-h-[380px] object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.85)] translate-y-9 sm:translate-y-11 md:translate-y-12 select-none pointer-events-none"
+                      className="w-full max-w-[440px] sm:max-w-[500px] md:max-w-[560px] max-h-[380px] sm:max-h-[440px] md:max-h-[480px] object-contain filter drop-shadow-[0_25px_35px_rgba(0,0,0,0.9)] translate-y-10 sm:translate-y-12 md:translate-y-14 select-none pointer-events-none"
                     />
                   ) : (
-                    <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full border-2 border-dashed border-[var(--penha-gold)]/25 flex flex-col items-center justify-center p-6 text-center bg-black/15 backdrop-blur-[2px]">
-                      <div className="w-16 h-16 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 flex items-center justify-center mb-3">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--penha-gold)" strokeWidth="1.5">
+                    <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-full border-2 border-dashed border-[var(--penha-gold)]/25 flex flex-col items-center justify-center p-6 text-center bg-black/15 backdrop-blur-[2px]">
+                      <div className="w-20 h-20 rounded-full bg-[var(--penha-gold)]/10 border border-[var(--penha-gold)]/30 flex items-center justify-center mb-3">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--penha-gold)" strokeWidth="1.5">
                           <rect x="3" y="3" width="18" height="18" rx="4" />
                           <circle cx="8.5" cy="8.5" r="1.5" />
                           <path d="M21 15l-5-5L5 21" />
                         </svg>
                       </div>
-                      <span className="font-display text-sm uppercase tracking-wider text-[var(--penha-cream)]">
+                      <span className="font-display text-base uppercase tracking-wider text-[var(--penha-cream)]">
                         {currentBurger.title}
                       </span>
                     </div>
@@ -206,83 +206,44 @@ export default function Hero() {
                 </motion.div>
               </AnimatePresence>
 
-              {/* Base de Madeira Rústica / Tábua Redonda / Prato */}
-              <div className="relative w-80 sm:w-96 md:w-[420px] h-16 -mt-3 z-10 pointer-events-none">
+              {/* Base de Madeira Rústica / Tábua Redonda / Prato Ampliado */}
+              <div className="relative w-84 sm:w-[460px] md:w-[520px] h-18 sm:h-20 -mt-2 z-10 pointer-events-none">
                 {/* Sombra de contato do hambúrguer diretamente sobre a tábua */}
-                <div className="absolute inset-x-12 top-1 h-6 bg-black/95 rounded-full blur-[7px]" />
+                <div className="absolute inset-x-12 sm:inset-x-16 top-1 h-7 bg-black/95 rounded-full blur-[8px]" />
                 {/* Sombra projetada no fundo */}
-                <div className="absolute inset-x-6 bottom-0 h-6 bg-black/95 rounded-full blur-md" />
+                <div className="absolute inset-x-6 sm:inset-x-8 bottom-0 h-8 bg-black/95 rounded-full blur-lg" />
                 
                 {/* Tábua de madeira redonda */}
-                <div className="relative w-full h-11 rounded-[100%] bg-gradient-to-b from-[#3a2215] via-[#24130a] to-[#120803] border-t-2 border-[#6d4128]/70 shadow-[0_15px_30px_rgba(0,0,0,0.95)] flex items-center justify-center">
+                <div className="relative w-full h-12 sm:h-14 rounded-[100%] bg-gradient-to-b from-[#3a2215] via-[#24130a] to-[#120803] border-t-2 border-[#6d4128]/70 shadow-[0_20px_45px_rgba(0,0,0,0.98)] flex items-center justify-center">
                   <div className="w-[94%] h-[80%] rounded-[100%] border border-[#7a482b]/30 bg-gradient-to-r from-transparent via-[#452718]/40 to-transparent" />
                 </div>
               </div>
             </div>
           </div>
 
-          {/* COLUNA DIREITA: Controles de Passar e Miniatura do Próximo Hambúrguer */}
-          <div className="lg:col-span-3 flex flex-row lg:flex-col items-center justify-center lg:justify-start gap-4 lg:gap-6 z-20">
-            
-            {/* Setas de navegação vertical / alternância */}
-            <div className="flex lg:flex-col items-center gap-2">
-              <button
-                type="button"
-                onClick={goToPrev}
-                className="w-11 h-11 rounded-full bg-black/60 hover:bg-[var(--penha-gold)] text-[var(--penha-cream)] hover:text-[var(--bg-dark)] border border-white/10 hover:border-[var(--penha-gold)] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-lg active:scale-95"
-                aria-label="Hambúrguer anterior"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polyline points="18 15 12 9 6 15" />
-                </svg>
-              </button>
-
-              <button
-                type="button"
-                onClick={goToNext}
-                className="w-11 h-11 rounded-full bg-black/60 hover:bg-[var(--penha-gold)] text-[var(--penha-cream)] hover:text-[var(--bg-dark)] border border-white/10 hover:border-[var(--penha-gold)] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-lg active:scale-95"
-                aria-label="Próximo hambúrguer"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Miniatura do Próximo Hambúrguer */}
-            <div
-              onClick={goToNext}
-              className="group cursor-pointer rounded-2xl bg-black/50 hover:bg-black/80 border border-white/10 hover:border-[var(--penha-gold)]/50 p-3.5 transition-all duration-300 w-44 sm:w-48 shadow-xl"
+          {/* COLUNA DIREITA: Apenas botões de navegação limpos, sem caixas pretas */}
+          <div className="lg:col-span-1 flex flex-row lg:flex-col items-center justify-center gap-3 z-20">
+            <button
+              type="button"
+              onClick={goToPrev}
+              className="w-12 h-12 rounded-full bg-white/5 hover:bg-[var(--penha-gold)] text-[var(--penha-cream)] hover:text-[var(--bg-dark)] border border-white/10 hover:border-[var(--penha-gold)] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-lg active:scale-95"
+              aria-label="Hambúrguer anterior"
             >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-[10px] font-slab uppercase tracking-wider text-[var(--penha-gold)] font-bold">
-                  Próximo
-                </span>
-                <span className="text-xs text-[var(--penha-cream)]/50 group-hover:text-[var(--penha-gold)] transition-colors">
-                  →
-                </span>
-              </div>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            </button>
 
-              {/* Slot da miniatura */}
-              <div className="w-full h-16 rounded-lg bg-black/40 border border-white/10 group-hover:border-[var(--penha-gold)]/30 flex items-center justify-center mb-2 overflow-hidden p-1">
-                {nextBurger.image ? (
-                  <img
-                    src={nextBurger.image}
-                    alt={nextBurger.title}
-                    className="w-full h-full object-contain filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.7)] group-hover:scale-105 transition-transform duration-300"
-                  />
-                ) : (
-                  <span className="text-[10px] text-[var(--penha-cream)]/40 font-mono">
-                    Foto em breve
-                  </span>
-                )}
-              </div>
-
-              <h4 className="font-display text-xs sm:text-sm text-[var(--penha-cream)] group-hover:text-[var(--penha-gold)] transition-colors uppercase truncate">
-                {nextBurger.title}
-              </h4>
-            </div>
-
+            <button
+              type="button"
+              onClick={goToNext}
+              className="w-12 h-12 rounded-full bg-white/5 hover:bg-[var(--penha-gold)] text-[var(--penha-cream)] hover:text-[var(--bg-dark)] border border-white/10 hover:border-[var(--penha-gold)] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-lg active:scale-95"
+              aria-label="Próximo hambúrguer"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
           </div>
 
         </div>
